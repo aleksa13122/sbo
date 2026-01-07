@@ -1,0 +1,70 @@
+.nav-container-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* THIS fixes cross-axis alignment */
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  background-color: transparent;
+}
+.nav-center {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: rgb(56, 36, 21);
+  font-size: 2rem;
+  gap: 1.5rem;
+}
+.nav-center a {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.nav-center a {
+  display: inline-block; /* required */
+  transition: transform 0.15s ease-out;
+}
+
+.nav-center a:hover {
+  cursor: pointer;
+  color: rgb(95, 58, 30);
+  transform: translateY(-5px); /* “float up” */
+}
+
+.nav-left {
+  margin-right: auto;
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  color: #4a2f1aff;
+}
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: auto;
+}
+.language-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* THIS is the key */
+  gap: 0.4rem;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: rgb(56, 36, 21);
+  font-size: 1.5rem;
+}
+.arrow-icon {
+  height: 1.5rem;
+  justify-self: center;
+}
