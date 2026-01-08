@@ -50,7 +50,7 @@
 .nav-right {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   margin-left: auto;
 }
 .language-btn {
@@ -68,3 +68,13 @@
   height: 1.5rem;
   justify-self: center;
 }
+/* .nav-right a {
+  transition: transform 0.2s ease-out;
+  font-weight: bold;
+}
+
+.nav-right a:hover {
+  cursor: pointer;
+  color: rgb(95, 58, 30);
+  transform: rotate(-180deg);
+} */

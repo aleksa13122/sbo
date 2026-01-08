@@ -1,0 +1,110 @@
+/* orderButton.css */
+
+/* Tweak these to match your palette */
+:root {
+  --btn-face: #ffffff;
+  --btn-border: #2b1b10; /* near-black/brown */
+  --btn-shadow: #2b1b10; /* shadow slab */
+  --btn-text: #2b1b10;
+}
+
+.btn3d {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The back slab/shadow */
+.btn3d__shadow {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--btn-shadow);
+  transform: translateY(10px);
+  transition: transform 160ms ease-out;
+}
+
+/* Optional edge for extra "3D" thickness */
+.btn3d__edge {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--btn-shadow);
+  opacity: 0.15;
+  transform: translateY(6px);
+  transition: transform 160ms ease-out, opacity 160ms ease-out;
+}
+
+/* The actual clickable face */
+.btn3d__face {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.6rem;
+  border-radius: 999px;
+  background: var(--btn-face);
+  border: 4px solid var(--btn-border);
+  color: var(--btn-text);
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: translateY(0);
+  transition: transform 160ms ease-out, filter 160ms ease-out;
+}
+
+.btn3d__text {
+  line-height: 1;
+}
+
+.btn3d__icon {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+/* Hover: "pop out" (face lifts, shadow drops slightly) */
+.btn3d:hover .btn3d__face {
+  transform: translateY(-3px);
+}
+
+.btn3d:hover .btn3d__shadow {
+  transform: translateY(12px);
+}
+
+.btn3d:hover .btn3d__edge {
+  transform: translateY(7px);
+  opacity: 0.2;
+}
+
+/* Active (mousedown/tap): "pressed" (face goes down further) */
+.btn3d:active .btn3d__face {
+  transform: translateY(8px);
+}
+
+.btn3d:active .btn3d__shadow {
+  transform: translateY(10px);
+}
+
+.btn3d:active .btn3d__edge {
+  transform: translateY(10px);
+  opacity: 0.12;
+}
+
+/* Keyboard accessibility */
+.btn3d:focus-visible .btn3d__face {
+  outline: 3px solid #f2b705; /* your accent */
+  outline-offset: 4px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn3d__shadow,
+  .btn3d__edge,
+  .btn3d__face {
+    transition: none;
+  }
+}
