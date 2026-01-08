@@ -7,6 +7,7 @@
   padding-right: 2rem;
   padding-top: 1rem;
   background-color: transparent;
+  /* background-color: aqua; */
 }
 .nav-center {
   display: flex;
@@ -67,6 +68,9 @@
 .arrow-icon {
   height: 1.5rem;
   justify-self: center;
+}
+.nav-right {
+  padding-bottom: 1rem;
 }
 /* .nav-right a {
   transition: transform 0.2s ease-out;
