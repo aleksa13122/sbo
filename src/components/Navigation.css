@@ -7,6 +7,13 @@
   padding-right: 2rem;
   padding-top: 1rem;
   background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f5deb3;
+  border-bottom: 1px solid rgba(74, 47, 26, 0.15);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   /* background-color: aqua; */
 }
 .nav-center {
@@ -38,6 +45,9 @@
   color: rgb(95, 58, 30);
   transform: translateY(-5px); /* “float up” */
 }
+.nav-center a:active {
+  transform: translateY(2px);
+}
 
 .nav-left {
   margin-right: auto;
@@ -47,6 +57,7 @@
   font-size: 4rem;
   letter-spacing: 0.3rem;
   color: #4a2f1aff;
+  cursor: pointer;
 }
 .nav-right {
   display: flex;
@@ -56,10 +67,12 @@
 }
 .language-btn {
   display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
   flex-direction: row;
   align-items: center; /* THIS is the key */
   gap: 0.4rem;
-
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: rgb(56, 36, 21);
@@ -72,13 +85,17 @@
 .nav-right {
   padding-bottom: 1rem;
 }
-/* .nav-right a {
+
+.language-btn {
+  margin-top: 1rem;
+}
+.language-btn a {
   transition: transform 0.2s ease-out;
   font-weight: bold;
 }
 
-.nav-right a:hover {
+.language-btn a:hover {
   cursor: pointer;
   color: rgb(95, 58, 30);
   transform: rotate(-180deg);
-} */
+}

@@ -1,7 +1,13 @@
 import Navigation from "./components/Navigation";
+import Hero from "./components/Hero";
 
 function App() {
-  return <Navigation></Navigation>;
+  return (
+    <div>
+      <Navigation></Navigation>
+      <Hero></Hero>
+    </div>
+  );
 }
 
 export default App;
