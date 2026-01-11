@@ -9,7 +9,7 @@ export default function OrderButton({
   icon = true,
 }) {
   return (
-    <a className="btn3d" href={href}>
+    <a className="btn3d" href={"https://wolt.com/en/discovery/mlt_chubbz"}>
       <span className="btn3d__shadow" aria-hidden="true" />
       <span className="btn3d__edge" aria-hidden="true" />
       <span className="btn3d__face">
