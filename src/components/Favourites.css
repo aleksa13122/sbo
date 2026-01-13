@@ -1,0 +1,168 @@
+/* Favourites.css */
+
+.favourites-container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+
+  background: #f5deb3;
+}
+
+/* Card */
+.favourites-card {
+  background: #ffffff;
+  border: 3px solid #2b1b10;
+  border-radius: 28px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  /* no shadow by default */
+  box-shadow: none;
+  transform: translateY(0);
+  cursor: pointer;
+
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+}
+
+/* Hover only: small shadow + lift */
+.favourites-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 0 rgba(43, 27, 16, 0.25);
+}
+
+/* No click/active animation (intentionally) */
+.favourites-card:active {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 0 rgba(43, 27, 16, 0.25);
+}
+
+/* Image placeholder */
+.favourites-img {
+  aspect-ratio: 4 / 3;
+  background: rgba(242, 183, 5, 0.22);
+
+  display: grid;
+  place-items: center;
+
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4a2f1a;
+}
+
+/* Headers */
+.favourites-title {
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  letter-spacing: 0.12em;
+
+  color: #4a2f1a; /* brown */
+
+  /* subtle pop, not loud */
+  text-shadow: 2px 2px 0 rgba(43, 27, 16, 0.15);
+}
+
+.favourites-header {
+  padding: 1rem 1.25rem 0.25rem;
+  text-align: center;
+
+  font-family: "Poppins", system-ui, sans-serif; /* same as image text */
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #4a2f1a;
+}
+
+/* Description */
+.favourites-desc {
+  padding: 1.25rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  color: #2b1b10;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* CTA area */
+.favourites-cta {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* 3D-style button (matches nav) */
+.favourites-cta a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+}
+
+/* Button shadow */
+.favourites-cta a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #2b1b10;
+  transform: translateY(6px);
+  z-index: 0;
+}
+
+/* Button face */
+.favourites-cta a span {
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+
+  background: #f2b705;
+  border: 3px solid #2b1b10;
+  border-radius: 999px;
+
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2b1b10;
+
+  transform: translateY(0);
+  transition: transform 140ms ease-out;
+}
+
+/* Button interactions */
+.favourites-cta a:hover span {
+  transform: translateY(-3px);
+}
+
+.favourites-cta a:active span {
+  transform: translateY(4px);
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .favourites-container-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .favourites-container-main {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.25rem;
+  }
+}

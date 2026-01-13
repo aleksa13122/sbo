@@ -1,0 +1,52 @@
+.marquee {
+  background: #f2b705;
+  border: 2px solid #3c281aff;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transform: rotate(-1.5deg);
+  width: 110vw;
+  margin-left: -5vw;
+  margin-bottom: 1.5rem;
+}
+
+.marquee-track {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  gap: 2rem;
+
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  letter-spacing: 0.12em;
+  color: #4a2f1a; /* brown */
+
+  /* subtle pop, not loud */
+  text-shadow: 2px 2px 0 rgba(43, 27, 16, 0.15);
+  width: max-content;
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+.marquee-seq {
+  flex: 0 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
