@@ -17,11 +17,13 @@
   font-family: "Bowlby One", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  gap: 2rem;
 
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   letter-spacing: 0.12em;
   color: #4a2f1a; /* brown */
+
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
 
   /* subtle pop, not loud */
   text-shadow: 2px 2px 0 rgba(43, 27, 16, 0.15);
@@ -35,6 +37,8 @@
 }
 .marquee-seq {
   flex: 0 0 auto;
+
+  padding-right: 1rem; /* spacing between repeats */
 }
 
 @media (prefers-reduced-motion: reduce) {
