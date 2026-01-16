@@ -20,7 +20,7 @@
 
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   letter-spacing: 0.12em;
-  color: #4a2f1a; /* brown */
+  color: red; /* brown */
 
   will-change: transform;
   transform: translate3d(0, 0, 0);
