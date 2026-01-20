@@ -12,17 +12,32 @@
   background: #f5deb3;
 }
 
+/* Section title */
+.favourites-title {
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  letter-spacing: 0.12em;
+
+  color: #4a2f1a;
+  text-shadow: 2px 2px 0 rgba(43, 27, 16, 0.15);
+}
+
 /* Card */
 .favourites-card {
   background: #ffffff;
   border: 3px solid #2b1b10;
   border-radius: 28px;
   overflow: hidden;
-
+  min-height: 420px;
   display: flex;
   flex-direction: column;
 
-  /* no shadow by default */
   box-shadow: none;
   transform: translateY(0);
   cursor: pointer;
@@ -36,49 +51,30 @@
   box-shadow: 0 6px 0 rgba(43, 27, 16, 0.25);
 }
 
-/* No click/active animation (intentionally) */
-.favourites-card:active {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 0 rgba(43, 27, 16, 0.25);
-}
-
-/* Image placeholder */
+/* Image wrapper (controls height) */
 .favourites-img {
-  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: 300px; /* adjust if you want taller/shorter */
+  overflow: hidden;
   background: rgba(242, 183, 5, 0.22);
-
-  display: grid;
-  place-items: center;
-
-  font-family: "Poppins", system-ui, sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #4a2f1a;
 }
 
-/* Headers */
-.favourites-title {
-  text-align: center;
-  margin: 2rem 0 1.5rem;
-  font-family: "Bowlby One", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
+/* The actual image (keeps proportions, crops instead of squeezing) */
+.favourites-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
 
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
-  letter-spacing: 0.12em;
-
-  color: #4a2f1a; /* brown */
-
-  /* subtle pop, not loud */
-  text-shadow: 2px 2px 0 rgba(43, 27, 16, 0.15);
+  object-fit: cover; /* IMPORTANT: no distortion */
+  object-position: center; /* tweak to "center top" if needed */
 }
 
+/* Burger name */
 .favourites-header {
   padding: 1rem 1.25rem 0.25rem;
   text-align: center;
-
-  font-family: "Poppins", system-ui, sans-serif; /* same as image text */
+  font-size: 1.4rem;
+  font-family: "Poppins", system-ui, sans-serif;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -88,11 +84,12 @@
 
 /* Description */
 .favourites-desc {
-  padding: 1.25rem;
+  padding: 0.5rem;
   font-family: "Poppins", system-ui, sans-serif;
   color: #2b1b10;
   font-size: 1rem;
   line-height: 1.4;
+  text-align: center;
 }
 
 /* CTA area */
@@ -100,6 +97,7 @@
   padding: 1.25rem;
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }
 
 /* 3D-style button (matches nav) */
@@ -164,5 +162,9 @@
   .favourites-container-main {
     grid-template-columns: 1fr;
     padding: 3rem 1.25rem;
+  }
+
+  .favourites-img {
+    height: 400px; /* slightly shorter on small screens */
   }
 }
