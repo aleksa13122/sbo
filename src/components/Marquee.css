@@ -8,8 +8,8 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   transform: rotate(-1.5deg);
-  width: 110vw;
-  margin-left: -5vw;
+  width: 100vw;
+  /* margin-left: -10vw; */
   margin-bottom: 1.5rem;
 }
 
