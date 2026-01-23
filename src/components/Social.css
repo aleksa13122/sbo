@@ -1,0 +1,22 @@
+.social-container-main {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  height: 280px;
+  width: 80vw;
+  background-color: #6b4526;
+  border: 3px solid #3c281aff;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-self: center;
+  color: #f2b705;
+}
+/* #4a2f1aff */
+/* #6B4526 */
+/* #3c281aff */
+
+.social-img {
+  height: 100px;
+  width: 100px;
+}

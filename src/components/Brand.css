@@ -41,10 +41,45 @@ body {
   position: relative;
   z-index: 2;
   padding: 6rem 2rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 8rem;
 }
 
 @media (max-width: 640px) {
   .brand__inner {
     padding: 3.5rem 1.25rem;
   }
+}
+.brand-img {
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.brand-row-second {
+  justify-content: center;
+  /* background-color: yellowgreen; */
+  text-align: center;
+  justify-items: center;
+}
+.brand__title {
+  color: #4a2f1a;
+  font-size: 40px;
+  font-family: "Bowlby One", sans-serif;
+  letter-spacing: 0.07em;
+  font-weight: 800;
+  margin-bottom: 0.5rem; /* 👈 smaller gap to text */
+  margin-top: -1rem; /* 👈 moves header up */
+  padding: 2rem;
+}
+
+.brand__text {
+  padding: 0.8rem;
+  margin-top: 0;
+  font-family: "Poppins", system-ui, sans-serif;
+  color: #2b1b10;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  text-align: center;
 }
