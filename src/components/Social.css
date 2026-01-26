@@ -11,6 +11,7 @@
   border-bottom-right-radius: 20px;
   justify-self: center;
   color: #f2b705;
+  position: relative;
 }
 /* #4a2f1aff */
 /* #6B4526 */
@@ -24,10 +25,12 @@
   padding-left: 90px;
 }
 .social-img {
-  height: 300px;
-  width: 300px;
-  padding-left: 70px;
+  height: 320px;
+  width: 320px;
   /* background-color: aquamarine; */
+  position: absolute;
+  right: 60px;
+  bottom: -80px;
 }
 .social-divs {
   display: flex;
