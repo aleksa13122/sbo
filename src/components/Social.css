@@ -1,10 +1,10 @@
 .social-container-main {
   margin-top: 200px;
   margin-bottom: 100px;
-  height: 280px;
+  height: 350px;
   width: 80vw;
   background-color: #6b4526;
-  border: 3px solid #3c281aff;
+  border: 2px solid #3c281aff;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -15,8 +15,36 @@
 /* #4a2f1aff */
 /* #6B4526 */
 /* #3c281aff */
-
+.social-header {
+  font-size: 40px;
+  font-family: "Bowlby One", sans-serif;
+  letter-spacing: 0.07em;
+  font-weight: 800;
+  text-align: start;
+  padding-left: 90px;
+}
 .social-img {
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
+  padding-left: 70px;
+  /* background-color: aquamarine; */
+}
+.social-divs {
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+  /* gap: 40px; */
+  color: rgb(252, 237, 210);
+  font-size: 25px;
+  font-family: "Poppins", system-ui, sans-serif;
+  /* background-color: aquamarine; */
+}
+.social-text {
+  padding-left: 20px;
+  /* background-color: rgb(14, 142, 255); */
+}
+.social-name {
+  color: rgb(236, 206, 149);
+  padding-left: 30px;
+  font-size: 18px;
 }
