@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function Brand() {
   const [index, setIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
   const quotes = [
     {
       text: "Juicy, messy, absolutely worth it.”",
@@ -38,15 +39,27 @@ export default function Brand() {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    setIsAnimating(true);
+    const timeout = setTimeout(() => {
+      setIsAnimating(false);
+    }, 300);
+
+    return () => clearTimeout(timeout);
+  }, [index]); // Sta je u zagradi[] na njegovu promenu se radi efekat
+
   return (
     <div className="social-container-main">
       <h3 className="social-header">PEOPLE SAY...</h3>
       <div className="social-divs">
-        <div className="social-text">
+        <div className={`social-text ${isAnimating ? "is-animating" : ""}`}>
           {quotes[index].text}
           <p className="social-name">{quotes[index].author}</p>
         </div>
-        <img className="social-img" src={character} />
+        <img
+          className={`social-img ${isAnimating ? "wiggle" : ""}`}
+          src={character}
+        />
       </div>
     </div>
   );

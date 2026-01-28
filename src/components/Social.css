@@ -33,6 +33,25 @@
   right: 60px;
   bottom: -90px;
 }
+.social-img.wiggle {
+  animation: social-wiggle 0.3s ease;
+}
+
+@keyframes social-wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .social-divs {
   display: flex;
   flex-direction: row;
@@ -47,6 +66,23 @@
   padding-left: 60px;
   /* background-color: rgb(14, 142, 255); */
 }
+.social-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* EXIT state (old text goes RIGHT + fades) */
+.social-text.is-animating {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+/* Prep position for entering text */
+.social-text:not(.is-animating) {
+  transform: translateX(-20px);
+}
+
 .social-name {
   color: rgb(236, 206, 149);
   padding-left: 60px;
