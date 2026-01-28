@@ -51,12 +51,29 @@ body {
     padding: 3.5rem 1.25rem;
   }
 }
+
+/* grow animation */
+
+@keyframes grow {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
 .brand-img {
   height: 300px;
   width: 300px;
   align-items: center;
-  /* background-color: aqua; */
+
+  animation-name: grow;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-timeline: view(); /* animacija se desava kada je element vidljiv */
+  animation-range: entry 0% cover 40%; /* animacija se desava kada se element pojavi */
 }
+
 .brand-row-second {
   justify-content: center;
   /* background-color: yellowgreen; */

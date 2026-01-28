@@ -72,19 +72,22 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* EXIT state (old text goes RIGHT + fades) */
-.social-text.is-animating {
-  opacity: 0;
-  transform: translateX(20px);
-}
-
-/* Prep position for entering text */
-.social-text:not(.is-animating) {
-  transform: translateX(-20px);
-}
-
 .social-name {
   color: rgb(236, 206, 149);
   padding-left: 60px;
   font-size: 18px;
+}
+
+.social-text {
+  transition: opacity 0.35s ease, filter 0.35s ease;
+}
+
+.social-text.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.social-text.hide {
+  opacity: 0;
+  filter: blur(6px);
 }
