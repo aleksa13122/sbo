@@ -5,10 +5,30 @@ import { useState, useEffect } from "react";
 export default function Brand() {
   const [index, setIndex] = useState(0);
   const quotes = [
-    { text: "Very good burgers!", author: "-Person who knows burgers" },
-    { text: "Very good burgers1", author: "-Person who knows burgers1" },
-    { text: "Very good burgers2", author: "-Person who knows burgers2" },
-    { text: "Very good burgers3", author: "-Person who knows burgers3" },
+    {
+      text: "Juicy, messy, absolutely worth it.”",
+      author: "-Person who lives for burgers",
+    },
+    {
+      text: "Serious flavour, no shortcuts taken.",
+      author: "-Burger chef",
+    },
+    {
+      text: "Best burger stop on my trip.",
+      author: "-Travel food influencer",
+    },
+    {
+      text: "You can taste the quality instantly.",
+      author: "-Local foodie",
+    },
+    {
+      text: "Simple ingredients, insanely good result.",
+      author: "-Person who knows burgers",
+    },
+    {
+      text: "I came once. I keep coming back.",
+      author: "-Regular who loves burgers",
+    },
   ];
   useEffect(() => {
     const timer = setInterval(() => {

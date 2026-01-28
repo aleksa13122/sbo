@@ -1,8 +1,8 @@
 .social-container-main {
   margin-top: 200px;
   margin-bottom: 100px;
-  height: 350px;
-  width: 80vw;
+  height: 300px;
+  width: 70vw;
   background-color: #6b4526;
   border: 2px solid #3c281aff;
   border-bottom-left-radius: 20px;
@@ -17,12 +17,12 @@
 /* #6B4526 */
 /* #3c281aff */
 .social-header {
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Bowlby One", sans-serif;
   letter-spacing: 0.07em;
   font-weight: 800;
   text-align: start;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 200px;
 }
 .social-img {
@@ -31,7 +31,7 @@
   /* background-color: aquamarine; */
   position: absolute;
   right: 60px;
-  bottom: -80px;
+  bottom: -90px;
 }
 .social-divs {
   display: flex;
@@ -44,7 +44,7 @@
   /* background-color: aquamarine; */
 }
 .social-text {
-  padding-left: 40px;
+  padding-left: 60px;
   /* background-color: rgb(14, 142, 255); */
 }
 .social-name {
