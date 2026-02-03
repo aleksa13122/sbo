@@ -53,7 +53,6 @@ body {
 }
 
 /* grow animation */
-
 @keyframes grow {
   from {
     scale: 0;
@@ -66,17 +65,15 @@ body {
   height: 300px;
   width: 300px;
   align-items: center;
-
   animation-name: grow;
   animation-timing-function: linear;
   animation-fill-mode: both;
   animation-timeline: view(); /* animacija se desava kada je element vidljiv */
-  animation-range: entry 0% cover 40%; /* animacija se desava kada se element pojavi */
+  animation-range: entry 0% cover 40%; /* animacija se desava kada se element pojavi i zavrsava se na 40% stranice */
 }
 
 .brand-row-second {
   justify-content: center;
-  /* background-color: yellowgreen; */
   text-align: center;
   justify-items: center;
 }

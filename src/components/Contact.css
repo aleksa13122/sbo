@@ -1,0 +1,11 @@
+.contacts-container-main {
+  width: 100vw;
+  height: 200px;
+  justify-self: center;
+  background-color: #f2b705;
+  border-top: 2px solid #6b4526;
+  border-right: 2px solid #6b4526;
+  border-left: 2px solid #6b4526;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
