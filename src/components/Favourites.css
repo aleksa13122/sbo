@@ -37,18 +37,21 @@
   min-height: 420px;
   display: flex;
   flex-direction: column;
-
+  /* cursor: default; */
   box-shadow: none;
   transform: translateY(0);
   cursor: pointer;
 
-  transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+  transition:
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out;
 }
 
 /* Hover only: small shadow + lift */
 .favourites-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 0 rgba(43, 27, 16, 0.25);
+  cursor: default;
 }
 
 /* Image wrapper (controls height) */

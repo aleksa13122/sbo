@@ -69,7 +69,8 @@
 .contact-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* ✅ dodato: centriraj sadržaj u koloni */
+  /* background-color: aqua; */
 }
 
 .col-title {
@@ -81,6 +82,7 @@
   border-bottom: 4px solid var(--contact-ink);
   padding-bottom: 0.5rem;
   color: var(--contact-ink);
+  align-self: center;
 }
 
 .info-list {
@@ -150,11 +152,12 @@
   .contact-columns {
     grid-template-columns: 1fr 1fr;
     gap: var(--contact-gap-lg);
-    text-align: left;
+    text-align: center; /* ✅ dodato: centriraj tekst i na desktopu */
+    justify-items: center; /* ✅ dodato: centriraj grid-iteme u kolonama */
   }
 
   .contact-col {
-    align-items: flex-start;
+    align-items: center; /* ✅ promenjeno: umesto flex-start */
   }
 
   .info-item,
