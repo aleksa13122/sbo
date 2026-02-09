@@ -1,6 +1,6 @@
 .social-container-main {
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
   height: 300px;
   width: 70vw;
   background-color: #6b4526;
@@ -22,7 +22,7 @@
   letter-spacing: 0.07em;
   font-weight: 800;
   text-align: start;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   padding-left: 200px;
 }
 .social-img {
@@ -69,7 +69,9 @@
 .social-text {
   opacity: 1;
   transform: translateX(0);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .social-name {
@@ -79,7 +81,9 @@
 }
 
 .social-text {
-  transition: opacity 0.35s ease, filter 0.35s ease;
+  transition:
+    opacity 0.35s ease,
+    filter 0.35s ease;
 }
 
 .social-text.show {

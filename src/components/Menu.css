@@ -1,0 +1,179 @@
+.menu-container-main {
+  margin-top: 12rem;
+
+  /* background-color: aqua; */
+}
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 2rem;
+
+  width: 90%;
+  justify-self: center;
+  /* background-color: #f2b705; */
+}
+.heading-divider {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+  width: 70%;
+  justify-self: center;
+  letter-spacing: 0.08em;
+  color: #6b2f12;
+  text-transform: uppercase;
+  margin: 4rem 0 3rem;
+  font-size: 50px;
+  font-family: "Bowlby One", sans-serif;
+  letter-spacing: 0.07em;
+  font-weight: 800;
+  margin-bottom: 0.5rem; /* 👈 smaller gap to text */
+}
+
+.heading-divider::before,
+.heading-divider::after {
+  content: "";
+  flex: 1;
+  height: 4px;
+  background: #f4b400;
+  border-radius: 999px;
+}
+
+.menu-subheader {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #c43b23;
+  text-shadow: 2.5px 2.5px 0 #ffb000;
+  margin: 3rem 0 2rem;
+  font-family: "Poppins";
+  margin-left: 8rem;
+}
+.menu-card {
+  background: #ffffff;
+  border: 3px solid #2b1b10;
+  border-radius: 28px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  /* cursor: default; */
+  box-shadow: none;
+  transform: translateY(0);
+  cursor: pointer;
+
+  transition:
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out;
+}
+
+/* Hover only: small shadow + lift */
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 0 rgba(43, 27, 16, 0.25);
+  cursor: default;
+}
+
+/* Image wrapper (controls height) */
+.menu-img {
+  width: 100%;
+  height: 250px; /* adjust if you want taller/shorter */
+  overflow: hidden;
+  background: rgba(242, 183, 5, 0.22);
+}
+
+/* The actual image (keeps proportions, crops instead of squeezing) */
+.menu-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* IMPORTANT: no distortion */
+  object-position: center; /* tweak to "center top" if needed */
+}
+
+/* Burger name */
+.burger-name {
+  padding: 1rem 1rem 0.25rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4a2f1a;
+}
+
+/* Description */
+.menu-desc {
+  padding: 0.5rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  color: #2b1b10;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* CTA area */
+.menu-cta {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* 3D-style button (matches nav) */
+.menu-cta a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+}
+
+/* Button shadow */
+.menu-cta a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #2b1b10;
+  transform: translateY(6px);
+  z-index: 0;
+}
+
+/* Button face */
+.menu-cta a span {
+  position: relative;
+  z-index: 1;
+
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+
+  background: #f2b705;
+  border: 3px solid #2b1b10;
+  border-radius: 999px;
+
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2b1b10;
+
+  transform: translateY(0);
+  transition: transform 140ms ease-out;
+}
+
+/* Button interactions */
+.menu-cta a:hover span {
+  transform: translateY(-3px);
+}
+
+.menu-cta a:active span {
+  transform: translateY(4px);
+}
+.menu-section:has(.menu-card:nth-last-child(-n + 3):first-child) {
+  justify-content: center;
+}
+.ending-divider {
+  font-size: 35px;
+}

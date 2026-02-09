@@ -6,9 +6,9 @@ function Navigation() {
     <div className="nav-container-main">
       <div className="nav-left">SBO</div>
       <div className="nav-center">
-        <a>MENU</a>
-        <a>LOCATION</a>
-        <a>CONTACT</a>
+        <a>FAVOURITES</a>
+        <a>TASTY STUFF</a>
+        <a>REVIEWS</a>
       </div>
       <div className="nav-right">
         <button className="language-btn">

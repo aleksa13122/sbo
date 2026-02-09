@@ -1,8 +1,8 @@
 import "../components/Favourites.css";
 import Marquee from "./Marquee";
-import cheesy from "../../src/assets/burger-cheesy.jpg";
-import maximus from "../../src/assets/burger-maximus.png";
-import shorty from "../../src/assets/burger-shorty.png";
+import cheesy from "../../src/assets/Cheesy.png";
+import maximus from "../../src/assets/Maxim.png";
+import shorty from "../../src/assets/Sorti.png";
 
 export default function Favourites() {
   return (
