@@ -93,14 +93,27 @@
 
 /* Burger name */
 .burger-name {
+  display: flex; /* ✅ needed */
+  align-items: center;
+  gap: 0.5rem;
   padding: 1rem 1rem 0.25rem;
-  text-align: center;
+  justify-content: center;
   font-size: 1.3rem;
   font-family: "Poppins", system-ui, sans-serif;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #4a2f1a;
+}
+
+.burger-name::before,
+.burger-name::after {
+  content: "";
+  flex: 1; /* ✅ lines expand */
+  height: 3px;
+  background: #f4b400;
+  border-radius: 999px;
+  opacity: 0.9;
 }
 
 /* Description */
