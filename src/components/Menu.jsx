@@ -10,6 +10,7 @@ import bigChick from "../assets/big-chick-burger.png";
 import madman from "../assets/madman-burger.png";
 import truffle from "../assets/sbo-truffle-burger.png";
 import maxim from "../assets/Maxim.png";
+import badge from "../assets/favourites-badge.png";
 
 export default function Menu() {
   return (
@@ -56,6 +57,7 @@ export default function Menu() {
         <div className="menu-card">
           <img src={shorty} alt="Cheesy burger" className="menu-img" />
           <div className="burger-name">SHORTY</div>
+          <img src={badge} className="favourite-badge" alt="Your favourites" />
           <div className="menu-desc">
             Compact, juicy, and full of flavor — a small burger made for quick
             bites without cutting corners on taste.
@@ -93,6 +95,7 @@ export default function Menu() {
         <div className="menu-card">
           <img src={maxim} alt="Cheesy burger" className="menu-img" />
           <div className="burger-name">MAXIMUS</div>
+          <img src={badge} className="favourite-badge" alt="Your favourites" />
           <div className="menu-desc">
             A towering stack loaded with crispy bacon, crunchy nachos, melted
             cheese, and bold sauces built for real hunger.
@@ -127,6 +130,7 @@ export default function Menu() {
         <div className="menu-card">
           <img src={cheesy} alt="Cheesy burger" className="menu-img" />
           <div className="burger-name">CHEESY CRAVE</div>
+          <img src={badge} className="favourite-badge" alt="Your favourites" />
           <div className="menu-desc">
             Melted cheddar dripping over a juicy patty, toasted bun, and just
             enough crunch to keep things serious and satisfying.
