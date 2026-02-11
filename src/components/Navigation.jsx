@@ -8,7 +8,7 @@ function Navigation() {
       <div className="nav-center">
         <a>FAVOURITES</a>
         <a>TASTY STUFF</a>
-        <a>REVIEWS</a>
+        <a>ASK THE CHEFF</a>
       </div>
       <div className="nav-right">
         <button className="language-btn">

@@ -11,6 +11,7 @@
   width: 100vw;
   /* margin-left: -10vw; */
   margin-bottom: 1.5rem;
+  cursor: default;
 }
 
 .marquee-track {
@@ -32,9 +33,7 @@
   white-space: nowrap;
   animation: scroll 15s linear infinite;
 }
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
+
 .marquee-seq {
   flex: 0 0 auto;
 

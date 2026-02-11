@@ -5,4 +5,5 @@ body {
   background-color: #f5deb3;
   overscroll-behavior: none;
   cursor: default;
+  scroll-behavior: auto;
 }
