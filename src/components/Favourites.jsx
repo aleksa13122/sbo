@@ -3,18 +3,23 @@ import Marquee from "./Marquee";
 import cheesy from "../../src/assets/Cheesy.png";
 import maximus from "../../src/assets/Maxim.png";
 import shorty from "../../src/assets/Sorti.png";
+import { useContext } from "react";
+import { LanguageContext } from "./context/LanguageContext";
 
 export default function Favourites() {
+  const { t } = useContext(LanguageContext);
+
   return (
     <div>
-      <Marquee></Marquee>
+      <Marquee />
       <div className="favourites-container-main" id="favourites">
         <div className="favourites-card">
           <img src={cheesy} alt="Cheesy burger" className="favourites-img" />
-          <div className="favourites-header">CHEESY CRAVE</div>
+          <div className="favourites-header">
+            {t("favourites.cheesyCrave.title")}
+          </div>
           <div className="favourites-desc">
-            Melted cheddar dripping over a juicy patty, toasted bun, and just
-            enough crunch to keep things serious and satisfying.
+            {t("favourites.cheesyCrave.desc")}
           </div>
           <div className="favourites-cta">
             <a
@@ -22,41 +27,39 @@ export default function Favourites() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("favourites.cheesyCrave.cta")}</span>
             </a>
           </div>
         </div>
         <div className="favourites-card">
           <img src={maximus} alt="Maximus burger" className="favourites-img" />
-          <div className="favourites-header">MAXIMUS</div>
-          <div className="favourites-desc">
-            A towering stack loaded with crispy bacon, crunchy nachos, melted
-            cheese, and bold sauces built for real hunger.
+          <div className="favourites-header">
+            {t("favourites.maximus.title")}
           </div>
+          <div className="favourites-desc">{t("favourites.maximus.desc")}</div>
           <div className="favourites-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("favourites.maximus.cta")}</span>
             </a>
           </div>
         </div>
         <div className="favourites-card">
           <img src={shorty} alt="shorty burger" className="favourites-img" />
-          <div className="favourites-header">SHORTY</div>
-          <div className="favourites-desc">
-            Compact, juicy, and full of flavor — a small burger made for quick
-            bites without cutting corners on taste.
+          <div className="favourites-header">
+            {t("favourites.shorty.title")}
           </div>
+          <div className="favourites-desc">{t("favourites.shorty.desc")}</div>
           <div className="favourites-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("favourites.shorty.cta")}</span>
             </a>
           </div>
         </div>

@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Contact.css";
-
-const CONTACT_LINKS = [
-  { label: "+1 (555) 019-2834", href: "tel:+15550192834" },
-  {
-    label: "hello@seriousburgers.com",
-    href: "mailto:hello@seriousburgers.com",
-  },
-  {
-    label: "@seriousburgers_official",
-    href: "https://instagram.com/seriousburgers_official",
-  },
-];
-
-const LOCATION = [
-  "882 Patty Meltdown Ave.",
-  "Flavor Town, TX 75001",
-  "Open Daily: 11am - 11pm",
-];
+import { LanguageContext } from "./context/LanguageContext";
 
 function Contact() {
+  const { t } = useContext(LanguageContext);
+
+  const CONTACT_LINKS = [
+    { label: t("contact.phone"), href: "tel:+15550192834" },
+    { label: t("contact.email"), href: "mailto:hello@seriousburgers.com" },
+    {
+      label: t("contact.instagram"),
+      href: "https://instagram.com/seriousburgers_official",
+    },
+  ];
+
+  const LOCATION = [
+    t("contact.address1"),
+    t("contact.address2"),
+    t("contact.hours"),
+  ];
+
   return (
     <section className="contact-section">
       <div className="contact-deco-line" aria-hidden="true" />
@@ -27,14 +27,16 @@ function Contact() {
       <div className="contact-container">
         <div className="contact-header">
           <h2 className="brand-title">
-            Serious <br className="mobile-break" /> Burgers Only
+            {t("contact.brandTitle").split(" ")[0]}{" "}
+            <br className="mobile-break" />{" "}
+            {t("contact.brandTitle").split(" ").slice(1).join(" ")}
           </h2>
         </div>
 
         <div className="contact-columns">
           <section className="contact-col" aria-labelledby="contact-contact">
             <h3 id="contact-contact" className="col-title">
-              Contact
+              {t("contact.contactTitle")}
             </h3>
             <ul className="info-list">
               {CONTACT_LINKS.map(({ label, href }) => (
@@ -47,7 +49,7 @@ function Contact() {
 
           <section className="contact-col" aria-labelledby="contact-location">
             <h3 id="contact-location" className="col-title">
-              Location
+              {t("contact.locationTitle")}
             </h3>
             <ul className="info-list">
               {LOCATION.map((line) => (
@@ -61,7 +63,7 @@ function Contact() {
 
         <div className="contact-copyright">
           <p className="copyright-text">
-            ALL RIGHTS RESERVED SBO © {new Date().getFullYear()}
+            {t("contact.copyright")} {new Date().getFullYear()}
           </p>
         </div>
       </div>

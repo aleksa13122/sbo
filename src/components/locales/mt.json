@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "brand": "SBO",
+    "favourites": "IL-FAVORITI",
+    "menu": "IKEL SABIH",
+    "orderButton": "ORDNA ISSA"
+  },
+  "marquee": {
+    "text": "IL-FAVORITI TIEGHEK"
+  },
+  "favourites": {
+    "cheesyCrave": {
+      "title": "CHEESY CRAVE",
+      "desc": "Gobon imsellem jintefa' fuq patty imbuhar, hobz imhammas, u bizzejjed crunch biex izomm kollox serju u sodisfacenti.",
+      "cta": "Ordna issa"
+    },
+    "maximus": {
+      "title": "MAXIMUS",
+      "desc": "Munzell gholi mimli bacon crispy, nachos crunch, gobon imsellem, u sawsijiet qawwija maghmula ghall-guh veru.",
+      "cta": "Ordna issa"
+    },
+    "shorty": {
+      "title": "SHORTY",
+      "desc": "Kompatt, imbuhar, u mimli toghma — burger zghir maghmul ghal daqqa hafifa minghajr ma jaqta' kantunieri fit-toghma.",
+      "cta": "Ordna issa"
+    }
+  },
+  "brand": {
+    "title": "BURGERS SERJI. EBDA JOKES.",
+    "description": "Hawn f'Serious Burgers Only, niehu l-burgers bis-serjeta — ebda jokes, ebda shortcuts, ebda kompromessi. Ahna nistakkaw patties imbuhra, gobon imsellem, u ingredjenti qawwija f'kull burger, naghmu ikel li huwa qawwi fit-toghma u impossibbli li tinjoraw. Huwa fun, huwa messy, u huwa maghmul biex izommok gej lura ghal aktar!"
+  },
+  "menu": {
+    "heading": "L-IKEL TAGHNA",
+    "classicBurgers": "BURGERS KLASSICI",
+    "specialBurgers": "BURGERS SPECJALI",
+    "chickenBurgers": "BURGERS TAT-TGIEG",
+    "endingHeading": "GAJJIN IL-GUH?",
+    "orderNow": "Ordna issa",
+    "burgers": {
+      "classic": {
+        "name": "CLASSIC BURGER",
+        "desc": "Patty tal-laham imbuhar, cheddar imsellem, hobz imhammas, u toghmiet klassici maghmula sew."
+      },
+      "classicPlus": {
+        "name": "CLASSIC PLUS",
+        "desc": "Patties imbuhra doppji, cheddar imsellem extra, hobz imhammas, u sodisfazzjon akbar."
+      },
+      "shorty": {
+        "name": "SHORTY",
+        "desc": "Kompatt, imbuhar, u mimli toghma — burger zghir maghmul ghal daqqa hafifa minghajr ma jaqta' kantunieri fit-toghma."
+      },
+      "loadedClassic": {
+        "name": "LOADED CLASSIC",
+        "desc": "Laham stacked gholi b'bacon, slaw, gobon imsellem, u sawsa, mibni messy, qawwi, u assolutament bla skuzi."
+      },
+      "maximus": {
+        "name": "MAXIMUS",
+        "desc": "Munzell gholi mimli bacon crispy, nachos crunch, gobon imsellem, u sawsijiet qawwija maghmula ghall-guh veru."
+      },
+      "madman": {
+        "name": "MADMAN",
+        "desc": "Ribs bil-mod smoky stacked fuq laham imbuhar, gobon imsellem, slaw crunchy, u sawsa maghmula ghal madness assoluta."
+      },
+      "cheesyCrave": {
+        "name": "CHEESY CRAVE",
+        "desc": "Gobon imsellem jintefa' fuq patty imbuhar, hobz imhammas, u bizzejjed crunch biex izomm kollox serju u sodisfacenti."
+      },
+      "sboTruffle": {
+        "name": "SBO TRUFFLE",
+        "desc": "Sawsa tat-truffle bl-art midfuna fil-laham imbuhar, gobon imsellem, u hobz imhammas, jaghti toghma fond b'tmiem smooth u lussuż."
+      },
+      "classicChicken": {
+        "name": "CLASSIC CHICKEN",
+        "desc": "Tgieg crispy, hass frisk, sawsa creamy, u hobz imhammas izomm kollox simplici u sodisfacenti."
+      },
+      "chickNcheese": {
+        "name": "CHICK N CHEESE",
+        "desc": "Tgieg moqli dehbi mghobbi f'gobon imsellem, hobz artab, u daqqa creamy li tilhaq il-comfort l-ewwel u l-crunch direttament wara."
+      },
+      "bigChick": {
+        "name": "BIG CHICK",
+        "desc": "Fillet tat-tgieg crispy massiv b'saff ta' gobon imsellem, sawsa qawwija, u crunch serju li ma zommx lura."
+      }
+    }
+  },
+  "social": {
+    "heading": "IN-NIES JGHIDU...",
+    "quotes": [
+      {
+        "text": "Imbuhar, messy, assolutament worth it.",
+        "author": "-Persuna li tghix ghall-burgers"
+      },
+      {
+        "text": "Toghma serja, ebda shortcuts.",
+        "author": "-Chef tal-burgers"
+      },
+      {
+        "text": "L-aqwa waqfa ta' burger fil-vjagg tieghi.",
+        "author": "-Influencer tal-ikel tal-ivvjaggar"
+      },
+      {
+        "text": "Tista' tittawwal il-kwalita instantament.",
+        "author": "-Foodie lokali"
+      },
+      {
+        "text": "Ingredjenti simplici, rizultat insanament tajjeb.",
+        "author": "-Persuna li taf burgers"
+      },
+      {
+        "text": "Gejt darba. Nibqa' nerga' nigi lura.",
+        "author": "-Regolari li jhobb il-burgers"
+      }
+    ]
+  },
+  "contact": {
+    "brandTitle": "Serious Burgers Only",
+    "contactTitle": "Kuntatt",
+    "locationTitle": "Post",
+    "phone": "+1 (555) 019-2834",
+    "email": "hello@seriousburgers.com",
+    "instagram": "@seriousburgers_official",
+    "address1": "882 Patty Meltdown Ave.",
+    "address2": "Flavor Town, TX 75001",
+    "hours": "Miftuh Kuljum: 11am - 11pm",
+    "copyright": "ID-DRITTIJIET KOLLHA RISERVATI SBO ©"
+  }
+}

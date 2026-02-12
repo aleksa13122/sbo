@@ -5,7 +5,7 @@ import Brand from "./components/Brand";
 import Social from "./components/Social";
 import Contact from "./components/Contact";
 import Menu from "./components/Menu";
-import AskChef from "./components/askTheCheff";
+import { LanguageProvider } from "./components/context/LanguageContext";
 
 import { useEffect } from "react";
 import Lenis from "lenis";
@@ -20,7 +20,7 @@ export default function App() {
       lerp: 0.06,
     });
 
-    window.lenis = lenis; // 👈 add this
+    window.lenis = lenis;
 
     function raf(time) {
       lenis.raf(time);
@@ -36,14 +36,15 @@ export default function App() {
 
   return (
     <div>
-      <Navigation></Navigation>
-      <Hero></Hero>
-      <Favourites></Favourites>
-      <Brand></Brand>
-      <Menu></Menu>
-      {/* <AskChef /> */}
-      <Social></Social>
-      <Contact></Contact>
+      <LanguageProvider>
+        <Navigation />
+        <Hero />
+        <Favourites />
+        <Brand />
+        <Menu />
+        <Social />
+        <Contact />
+      </LanguageProvider>
     </div>
   );
 }

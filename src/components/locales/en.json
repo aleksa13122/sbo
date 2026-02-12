@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "brand": "SBO",
+    "favourites": "FAVOURITES",
+    "menu": "TASTY STUFF",
+    "orderButton": "ORDER NOW"
+  },
+  "marquee": {
+    "text": "YOUR FAVOURITES"
+  },
+  "favourites": {
+    "cheesyCrave": {
+      "title": "CHEESY CRAVE",
+      "desc": "Melted cheddar dripping over a juicy patty, toasted bun, and just enough crunch to keep things serious and satisfying.",
+      "cta": "Order now"
+    },
+    "maximus": {
+      "title": "MAXIMUS",
+      "desc": "A towering stack loaded with crispy bacon, crunchy nachos, melted cheese, and bold sauces built for real hunger.",
+      "cta": "Order now"
+    },
+    "shorty": {
+      "title": "SHORTY",
+      "desc": "Compact, juicy, and full of flavor — a small burger made for quick bites without cutting corners on taste.",
+      "cta": "Order now"
+    }
+  },
+  "brand": {
+    "title": "SERIOUS BURGERS. NO JOKES.",
+    "description": "Here at Serious Burgers Only, we take burgers seriously — no jokes, no shortcuts, no compromises. We stack juicy patties, melty cheese, and bold ingredients into every build, making food that's loud in flavor and impossible to ignore. It's fun, it's messy, and it's made to keep you coming back for more!"
+  },
+  "menu": {
+    "heading": "OUR FOOD",
+    "classicBurgers": "CLASSIC BURGERS",
+    "specialBurgers": "SPECIAL BURGERS",
+    "chickenBurgers": "CHICKEN BURGERS",
+    "endingHeading": "HUNGRY YET?",
+    "orderNow": "Order now",
+    "burgers": {
+      "classic": {
+        "name": "CLASSIC BURGER",
+        "desc": "Juicy beef patty, melted cheddar, toasted bun, and classic flavors done right."
+      },
+      "classicPlus": {
+        "name": "CLASSIC PLUS",
+        "desc": "Double juicy patties, extra melted cheddar, toasted bun, and bigger satisfaction."
+      },
+      "shorty": {
+        "name": "SHORTY",
+        "desc": "Compact, juicy, and full of flavor — a small burger made for quick bites without cutting corners on taste."
+      },
+      "loadedClassic": {
+        "name": "LOADED CLASSIC",
+        "desc": "Stacked beef piled high with bacon, slaw, melted cheese, and sauce, built messy, bold, and absolutely unapologetic."
+      },
+      "maximus": {
+        "name": "MAXIMUS",
+        "desc": "A towering stack loaded with crispy bacon, crunchy nachos, melted cheese, and bold sauces built for real hunger."
+      },
+      "madman": {
+        "name": "MADMAN",
+        "desc": "Slow-cooked smoky ribs stacked over juicy beef, melted cheese, crunchy slaw, and sauce made for absolute madness."
+      },
+      "cheesyCrave": {
+        "name": "CHEESY CRAVE",
+        "desc": "Melted cheddar dripping over a juicy patty, toasted bun, and just enough crunch to keep things serious and satisfying."
+      },
+      "sboTruffle": {
+        "name": "SBO TRUFFLE",
+        "desc": "Earthy truffle sauce folded into juicy beef, melted cheese, and a toasted bun, delivering deep flavor with a smooth, luxurious finish."
+      },
+      "classicChicken": {
+        "name": "CLASSIC CHICKEN",
+        "desc": "Crispy chicken, fresh lettuce, creamy sauce, and a toasted bun keeping things simple and satisfying."
+      },
+      "chickNcheese": {
+        "name": "CHICK N CHEESE",
+        "desc": "Golden fried chicken wrapped in melted cheese, soft bun, and a creamy bite that hits comfort first and crunch right after."
+      },
+      "bigChick": {
+        "name": "BIG CHICK",
+        "desc": "A massive crispy chicken fillet layered with melted cheese, bold sauce, and a serious crunch that doesn't hold back."
+      }
+    }
+  },
+  "social": {
+    "heading": "PEOPLE SAY...",
+    "quotes": [
+      {
+        "text": "Juicy, messy, absolutely worth it.",
+        "author": "-Person who lives for burgers"
+      },
+      {
+        "text": "Serious flavour, no shortcuts taken.",
+        "author": "-Burger chef"
+      },
+      {
+        "text": "Best burger stop on my trip.",
+        "author": "-Travel food influencer"
+      },
+      {
+        "text": "You can taste the quality instantly.",
+        "author": "-Local foodie"
+      },
+      {
+        "text": "Simple ingredients, insanely good result.",
+        "author": "-Person who knows burgers"
+      },
+      {
+        "text": "I came once. I keep coming back.",
+        "author": "-Regular who loves burgers"
+      }
+    ]
+  },
+  "contact": {
+    "brandTitle": "Serious Burgers Only",
+    "contactTitle": "Contact",
+    "locationTitle": "Location",
+    "phone": "+1 (555) 019-2834",
+    "email": "hello@seriousburgers.com",
+    "instagram": "@seriousburgers_official",
+    "address1": "882 Patty Meltdown Ave.",
+    "address2": "Flavor Town, TX 75001",
+    "hours": "Open Daily: 11am - 11pm",
+    "copyright": "ALL RIGHTS RESERVED SBO ©"
+  }
+}

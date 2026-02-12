@@ -1,19 +1,17 @@
-// OrderButton.jsx
-// Usage: <OrderButton href="https://wolt.com/en/mlt" label="ORDER NOW" />
-
 import "./orderButton.css";
+import { useContext } from "react";
+import { LanguageContext } from "./context/LanguageContext";
 
-export default function OrderButton({
-  href,
-  label = "ORDER NOW",
-  icon = true,
-}) {
+export default function OrderButton({ href, label, icon = true }) {
+  const { t } = useContext(LanguageContext);
+  const buttonLabel = label || t("navigation.orderButton");
+
   return (
-    <a className="btn3d" href={"https://wolt.com/en/discovery/mlt_chubbz"}>
+    <a className="btn3d" href="https://wolt.com/en/discovery/mlt_chubbz">
       <span className="btn3d__shadow" aria-hidden="true" />
       <span className="btn3d__edge" aria-hidden="true" />
       <span className="btn3d__face">
-        <span className="btn3d__text">{label}</span>
+        <span className="btn3d__text">{buttonLabel}</span>
         {icon && (
           <svg
             className="btn3d__icon"

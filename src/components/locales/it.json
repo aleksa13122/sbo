@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "brand": "SBO",
+    "favourites": "PREFERITI",
+    "menu": "ROBA GUSTOSA",
+    "orderButton": "ORDINA ORA"
+  },
+  "marquee": {
+    "text": "I TUOI PREFERITI"
+  },
+  "favourites": {
+    "cheesyCrave": {
+      "title": "CHEESY CRAVE",
+      "desc": "Cheddar fuso che cola su un hamburger succoso, panino tostato e abbastanza croccantezza per mantenere tutto serio e soddisfacente.",
+      "cta": "Ordina ora"
+    },
+    "maximus": {
+      "title": "MAXIMUS",
+      "desc": "Una torre carica di bacon croccante, nachos croccanti, formaggio fuso e salse audaci costruite per la vera fame.",
+      "cta": "Ordina ora"
+    },
+    "shorty": {
+      "title": "SHORTY",
+      "desc": "Compatto, succoso e pieno di sapore — un piccolo hamburger fatto per bocconi veloci senza compromessi sul gusto.",
+      "cta": "Ordina ora"
+    }
+  },
+  "brand": {
+    "title": "HAMBURGER SERI. NIENTE SCHERZI.",
+    "description": "Qui da Serious Burgers Only, prendiamo gli hamburger sul serio — niente scherzi, niente scorciatoie, niente compromessi. Accatastiamo hamburger succosi, formaggio fuso e ingredienti audaci in ogni creazione, realizzando cibo ad alto sapore e impossibile da ignorare. È divertente, è disordinato ed è fatto per farti tornare per averne ancora!"
+  },
+  "menu": {
+    "heading": "IL NOSTRO CIBO",
+    "classicBurgers": "HAMBURGER CLASSICI",
+    "specialBurgers": "HAMBURGER SPECIALI",
+    "chickenBurgers": "HAMBURGER DI POLLO",
+    "endingHeading": "HAI GIÀ FAME?",
+    "orderNow": "Ordina ora",
+    "burgers": {
+      "classic": {
+        "name": "CLASSIC BURGER",
+        "desc": "Hamburger di manzo succoso, cheddar fuso, panino tostato e sapori classici fatti bene."
+      },
+      "classicPlus": {
+        "name": "CLASSIC PLUS",
+        "desc": "Doppi hamburger succosi, cheddar fuso extra, panino tostato e maggiore soddisfazione."
+      },
+      "shorty": {
+        "name": "SHORTY",
+        "desc": "Compatto, succoso e pieno di sapore — un piccolo hamburger fatto per bocconi veloci senza compromessi sul gusto."
+      },
+      "loadedClassic": {
+        "name": "LOADED CLASSIC",
+        "desc": "Manzo impilato alto con bacon, insalata di cavolo, formaggio fuso e salsa, costruito disordinato, audace e assolutamente senza scuse."
+      },
+      "maximus": {
+        "name": "MAXIMUS",
+        "desc": "Una torre carica di bacon croccante, nachos croccanti, formaggio fuso e salse audaci costruite per la vera fame."
+      },
+      "madman": {
+        "name": "MADMAN",
+        "desc": "Costine affumicate cotte lentamente impilate su manzo succoso, formaggio fuso, insalata croccante e salsa fatta per la follia assoluta."
+      },
+      "cheesyCrave": {
+        "name": "CHEESY CRAVE",
+        "desc": "Cheddar fuso che cola su un hamburger succoso, panino tostato e abbastanza croccantezza per mantenere tutto serio e soddisfacente."
+      },
+      "sboTruffle": {
+        "name": "SBO TRUFFLE",
+        "desc": "Salsa al tartufo terrosa mescolata con manzo succoso, formaggio fuso e panino tostato, offrendo un sapore profondo con una finitura liscia e lussuosa."
+      },
+      "classicChicken": {
+        "name": "CLASSIC CHICKEN",
+        "desc": "Pollo croccante, lattuga fresca, salsa cremosa e panino tostato mantenendo tutto semplice e soddisfacente."
+      },
+      "chickNcheese": {
+        "name": "CHICK N CHEESE",
+        "desc": "Pollo fritto dorato avvolto nel formaggio fuso, panino morbido e un morso cremoso che colpisce prima il comfort e poi la croccantezza."
+      },
+      "bigChick": {
+        "name": "BIG CHICK",
+        "desc": "Un enorme filetto di pollo croccante a strati con formaggio fuso, salsa audace e una seria croccantezza che non si trattiene."
+      }
+    }
+  },
+  "social": {
+    "heading": "LA GENTE DICE...",
+    "quotes": [
+      {
+        "text": "Succoso, disordinato, assolutamente ne vale la pena.",
+        "author": "-Persona che vive per gli hamburger"
+      },
+      {
+        "text": "Sapore serio, niente scorciatoie.",
+        "author": "-Chef di hamburger"
+      },
+      {
+        "text": "Migliore tappa hamburger del mio viaggio.",
+        "author": "-Influencer di cibo da viaggio"
+      },
+      {
+        "text": "Puoi assaporare la qualità istantaneamente.",
+        "author": "-Buongustaio locale"
+      },
+      {
+        "text": "Ingredienti semplici, risultato incredibilmente buono.",
+        "author": "-Persona che conosce gli hamburger"
+      },
+      {
+        "text": "Sono venuto una volta. Continuo a tornare.",
+        "author": "-Cliente abituale che ama gli hamburger"
+      }
+    ]
+  },
+  "contact": {
+    "brandTitle": "Serious Burgers Only",
+    "contactTitle": "Contatto",
+    "locationTitle": "Posizione",
+    "phone": "+1 (555) 019-2834",
+    "email": "hello@seriousburgers.com",
+    "instagram": "@seriousburgers_official",
+    "address1": "882 Patty Meltdown Ave.",
+    "address2": "Flavor Town, TX 75001",
+    "hours": "Aperto Ogni Giorno: 11:00 - 23:00",
+    "copyright": "TUTTI I DIRITTI RISERVATI SBO ©"
+  }
+}

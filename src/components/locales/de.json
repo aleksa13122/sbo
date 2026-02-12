@@ -1,0 +1,127 @@
+{
+  "navigation": {
+    "brand": "SBO",
+    "favourites": "FAVORITEN",
+    "menu": "LECKERES ZEUG",
+    "orderButton": "JETZT BESTELLEN"
+  },
+  "marquee": {
+    "text": "DEINE FAVORITEN"
+  },
+  "favourites": {
+    "cheesyCrave": {
+      "title": "CHEESY CRAVE",
+      "desc": "Geschmolzener Cheddar tropft über ein saftiges Patty, geröstetes Brötchen und genug Crunch, um alles seriös und befriedigend zu halten.",
+      "cta": "Jetzt bestellen"
+    },
+    "maximus": {
+      "title": "MAXIMUS",
+      "desc": "Ein hoher Stapel mit knusprigem Bacon, knusprigen Nachos, geschmolzenem Käse und kräftigen Saucen für echten Hunger.",
+      "cta": "Jetzt bestellen"
+    },
+    "shorty": {
+      "title": "SHORTY",
+      "desc": "Kompakt, saftig und voller Geschmack — ein kleiner Burger für schnelle Happen ohne Abstriche beim Geschmack.",
+      "cta": "Jetzt bestellen"
+    }
+  },
+  "brand": {
+    "title": "ERNSTHAFTE BURGER. KEINE WITZE.",
+    "description": "Hier bei Serious Burgers Only nehmen wir Burger ernst — keine Witze, keine Abkürzungen, keine Kompromisse. Wir stapeln saftige Patties, schmelzenden Käse und kräftige Zutaten in jeden Build und machen Essen, das laut im Geschmack ist und unmöglich zu ignorieren. Es macht Spaß, ist chaotisch und ist gemacht, damit du immer wieder kommst!"
+  },
+  "menu": {
+    "heading": "UNSER ESSEN",
+    "classicBurgers": "KLASSISCHE BURGER",
+    "specialBurgers": "SPEZIELLE BURGER",
+    "chickenBurgers": "HÄHNCHEN BURGER",
+    "endingHeading": "SCHON HUNGRIG?",
+    "orderNow": "Jetzt bestellen",
+    "burgers": {
+      "classic": {
+        "name": "CLASSIC BURGER",
+        "desc": "Saftiges Rindfleisch-Patty, geschmolzener Cheddar, geröstetes Brötchen und klassische Aromen richtig gemacht."
+      },
+      "classicPlus": {
+        "name": "CLASSIC PLUS",
+        "desc": "Doppelte saftige Patties, extra geschmolzener Cheddar, geröstetes Brötchen und größere Zufriedenheit."
+      },
+      "shorty": {
+        "name": "SHORTY",
+        "desc": "Kompakt, saftig und voller Geschmack — ein kleiner Burger für schnelle Happen ohne Abstriche beim Geschmack."
+      },
+      "loadedClassic": {
+        "name": "LOADED CLASSIC",
+        "desc": "Gestapeltes Rindfleisch hoch mit Bacon, Krautsalat, geschmolzenem Käse und Sauce, chaotisch, mutig und absolut kompromisslos gebaut."
+      },
+      "maximus": {
+        "name": "MAXIMUS",
+        "desc": "Ein hoher Stapel mit knusprigem Bacon, knusprigen Nachos, geschmolzenem Käse und kräftigen Saucen für echten Hunger."
+      },
+      "madman": {
+        "name": "MADMAN",
+        "desc": "Langsam gegarte rauchige Rippchen über saftigem Rindfleisch gestapelt, geschmolzener Käse, knuspriger Krautsalat und Sauce für absoluten Wahnsinn."
+      },
+      "cheesyCrave": {
+        "name": "CHEESY CRAVE",
+        "desc": "Geschmolzener Cheddar tropft über ein saftiges Patty, geröstetes Brötchen und genug Crunch, um alles seriös und befriedigend zu halten."
+      },
+      "sboTruffle": {
+        "name": "SBO TRUFFLE",
+        "desc": "Erdige Trüffelsauce in saftiges Rindfleisch gefaltet, geschmolzener Käse und geröstetes Brötchen, liefert tiefen Geschmack mit glattem, luxuriösem Finish."
+      },
+      "classicChicken": {
+        "name": "CLASSIC CHICKEN",
+        "desc": "Knuspriges Hähnchen, frischer Salat, cremige Sauce und geröstetes Brötchen halten alles einfach und befriedigend."
+      },
+      "chickNcheese": {
+        "name": "CHICK N CHEESE",
+        "desc": "Goldenes frittiertes Hähnchen in geschmolzenem Käse eingewickelt, weiches Brötchen und ein cremiger Bissen, der zuerst Komfort und direkt danach Crunch trifft."
+      },
+      "bigChick": {
+        "name": "BIG CHICK",
+        "desc": "Ein massives knuspriges Hähnchenfilet mit geschmolzenem Käse, kräftiger Sauce und einem ernsthaften Crunch, der sich nicht zurückhält."
+      }
+    }
+  },
+  "social": {
+    "heading": "LEUTE SAGEN...",
+    "quotes": [
+      {
+        "text": "Saftig, chaotisch, absolut es wert.",
+        "author": "-Person, die für Burger lebt"
+      },
+      {
+        "text": "Ernsthafter Geschmack, keine Abkürzungen genommen.",
+        "author": "-Burger-Koch"
+      },
+      {
+        "text": "Bester Burger-Stopp auf meiner Reise.",
+        "author": "-Reise-Food-Influencer"
+      },
+      {
+        "text": "Man schmeckt die Qualität sofort.",
+        "author": "-Lokaler Feinschmecker"
+      },
+      {
+        "text": "Einfache Zutaten, wahnsinnig gutes Ergebnis.",
+        "author": "-Person, die Burger kennt"
+      },
+      {
+        "text": "Ich kam einmal. Ich komme immer wieder zurück.",
+        "author": "-Stammgast, der Burger liebt"
+      }
+    ]
+  },
+  "contact": {
+    "brandTitle": "Serious Burgers Only",
+    "contactTitle": "Kontakt",
+    "locationTitle": "Standort",
+    "phone": "+1 (555) 019-2834",
+    "email": "hello@seriousburgers.com",
+    "instagram": "@seriousburgers_official",
+    "address1": "882 Patty Meltdown Ave.",
+    "address2": "Flavor Town, TX 75001",
+    "hours": "Täglich geöffnet: 11:00 - 23:00 Uhr",
+    "copyright": "ALLE RECHTE VORBEHALTEN SBO ©"
+  }
+}

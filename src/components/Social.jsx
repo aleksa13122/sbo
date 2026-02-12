@@ -1,25 +1,11 @@
 import "./Social.css";
 import character from "../assets/burger-cheff.png";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { LanguageContext } from "./context/LanguageContext";
 
 export default function Social() {
-  const quotes = [
-    {
-      text: "Juicy, messy, absolutely worth it.",
-      author: "-Person who lives for burgers",
-    },
-    { text: "Serious flavour, no shortcuts taken.", author: "-Burger chef" },
-    { text: "Best burger stop on my trip.", author: "-Travel food influencer" },
-    { text: "You can taste the quality instantly.", author: "-Local foodie" },
-    {
-      text: "Simple ingredients, insanely good result.",
-      author: "-Person who knows burgers",
-    },
-    {
-      text: "I came once. I keep coming back.",
-      author: "-Regular who loves burgers",
-    },
-  ];
+  const { t } = useContext(LanguageContext);
+  const quotes = t("social.quotes");
 
   const INTERVAL = 5000;
   const DURATION = 350;
@@ -39,11 +25,11 @@ export default function Social() {
     }, INTERVAL);
 
     return () => clearInterval(id);
-  }, []);
+  }, [quotes.length]);
 
   return (
     <div className="social-container-main">
-      <h3 className="social-header">PEOPLE SAY...</h3>
+      <h3 className="social-header">{t("social.heading")}</h3>
 
       <div className="social-divs">
         <div className={`social-text ${state}`}>

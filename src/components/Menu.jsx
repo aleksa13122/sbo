@@ -11,73 +11,78 @@ import madman from "../assets/madman-burger.png";
 import truffle from "../assets/sbo-truffle-burger.png";
 import maxim from "../assets/Maxim.png";
 import badge from "../assets/favourites-badge.png";
+import { useContext } from "react";
+import { LanguageContext } from "./context/LanguageContext";
 
 export default function Menu() {
+  const { t } = useContext(LanguageContext);
+
   return (
     <div className="menu-container-main" id="menu">
-      <h1 className="heading-divider">OUR FOOD</h1>
-      <h3 className="menu-subheader">CLASSIC BURGERS</h3>
+      <h1 className="heading-divider">{t("menu.heading")}</h1>
+      <h3 className="menu-subheader">{t("menu.classicBurgers")}</h3>
 
-      <h3 className="menu-subheader"></h3>
       <div className="menu-section">
         <div className="menu-card">
-          <img src={classic} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">CLASSIC BURGER</div>
-          <div className="menu-desc">
-            Juicy beef patty, melted cheddar, toasted bun, and classic flavors
-            done right.
-          </div>
+          <img src={classic} alt="Classic burger" className="menu-img" />
+          <div className="burger-name">{t("menu.burgers.classic.name")}</div>
+          <div className="menu-desc">{t("menu.burgers.classic.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
         <div className="menu-card">
-          <img src={classicPlus} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">CLASSIC PLUS</div>
-          <div className="menu-desc">
-            Double juicy patties, extra melted cheddar, toasted bun, and bigger
-            satisfaction.
+          <img
+            src={classicPlus}
+            alt="Classic Plus burger"
+            className="menu-img"
+          />
+          <div className="burger-name">
+            {t("menu.burgers.classicPlus.name")}
           </div>
+          <div className="menu-desc">{t("menu.burgers.classicPlus.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
         <div className="menu-card">
-          <img src={shorty} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">SHORTY</div>
+          <img src={shorty} alt="Shorty burger" className="menu-img" />
+          <div className="burger-name">{t("menu.burgers.shorty.name")}</div>
           <img src={badge} className="favourite-badge" alt="Your favourites" />
-          <div className="menu-desc">
-            Compact, juicy, and full of flavor — a small burger made for quick
-            bites without cutting corners on taste.
-          </div>
+          <div className="menu-desc">{t("menu.burgers.shorty.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
         <div className="menu-card">
-          <img src={classicLoaded} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">LOADED CLASSIC</div>
+          <img
+            src={classicLoaded}
+            alt="Loaded Classic burger"
+            className="menu-img"
+          />
+          <div className="burger-name">
+            {t("menu.burgers.loadedClassic.name")}
+          </div>
           <div className="menu-desc">
-            Stacked beef piled high with bacon, slaw, melted cheese, and sauce,
-            built messy, bold, and absolutely unapologetic.
+            {t("menu.burgers.loadedClassic.desc")}
           </div>
           <div className="menu-cta">
             <a
@@ -85,92 +90,89 @@ export default function Menu() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
       </div>
-      <h3 className="menu-subheader">SPECIAL BURGERS</h3>
+
+      <h3 className="menu-subheader">{t("menu.specialBurgers")}</h3>
       <div className="menu-section">
         <div className="menu-card">
-          <img src={maxim} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">MAXIMUS</div>
+          <img src={maxim} alt="Maximus burger" className="menu-img" />
+          <div className="burger-name">{t("menu.burgers.maximus.name")}</div>
           <img src={badge} className="favourite-badge" alt="Your favourites" />
-          <div className="menu-desc">
-            A towering stack loaded with crispy bacon, crunchy nachos, melted
-            cheese, and bold sauces built for real hunger.
-          </div>
+          <div className="menu-desc">{t("menu.burgers.maximus.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
         <div className="menu-card">
-          <img src={madman} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">MADMAN</div>
-          <div className="menu-desc">
-            Slow-cooked smoky ribs stacked over juicy beef, melted cheese,
-            crunchy slaw, and sauce made for absolute madness.
-          </div>
+          <img src={madman} alt="Madman burger" className="menu-img" />
+          <div className="burger-name">{t("menu.burgers.madman.name")}</div>
+          <div className="menu-desc">{t("menu.burgers.madman.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
         <div className="menu-card">
-          <img src={cheesy} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">CHEESY CRAVE</div>
+          <img src={cheesy} alt="Cheesy Crave burger" className="menu-img" />
+          <div className="burger-name">
+            {t("menu.burgers.cheesyCrave.name")}
+          </div>
           <img src={badge} className="favourite-badge" alt="Your favourites" />
-          <div className="menu-desc">
-            Melted cheddar dripping over a juicy patty, toasted bun, and just
-            enough crunch to keep things serious and satisfying.
-          </div>
+          <div className="menu-desc">{t("menu.burgers.cheesyCrave.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
         <div className="menu-card">
-          <img src={truffle} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">SBO TRUFFLE</div>
-          <div className="menu-desc">
-            Earthy truffle sauce folded into juicy beef, melted cheese, and a
-            toasted bun, delivering deep flavor with a smooth, luxurious finish.
-          </div>
+          <img src={truffle} alt="SBO Truffle burger" className="menu-img" />
+          <div className="burger-name">{t("menu.burgers.sboTruffle.name")}</div>
+          <div className="menu-desc">{t("menu.burgers.sboTruffle.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
       </div>
-      <h3 className="menu-subheader">CHICKEN BURGERS</h3>
+
+      <h3 className="menu-subheader">{t("menu.chickenBurgers")}</h3>
       <div className="menu-section">
         <div className="menu-card">
-          <img src={classicChicken} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">CLASSIC CHICKEN</div>
+          <img
+            src={classicChicken}
+            alt="Classic Chicken burger"
+            className="menu-img"
+          />
+          <div className="burger-name">
+            {t("menu.burgers.classicChicken.name")}
+          </div>
           <div className="menu-desc">
-            Crispy chicken, fresh lettuce, creamy sauce, and a toasted bun
-            keeping things simple and satisfying.
+            {t("menu.burgers.classicChicken.desc")}
           </div>
           <div className="menu-cta">
             <a
@@ -178,46 +180,49 @@ export default function Menu() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
         <div className="menu-card">
-          <img src={chickNchesse} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">CHICK N CHEESE</div>
-          <div className="menu-desc">
-            Golden fried chicken wrapped in melted cheese, soft bun, and a
-            creamy bite that hits comfort first and crunch right after.
+          <img
+            src={chickNchesse}
+            alt="Chick N Cheese burger"
+            className="menu-img"
+          />
+          <div className="burger-name">
+            {t("menu.burgers.chickNcheese.name")}
           </div>
+          <div className="menu-desc">{t("menu.burgers.chickNcheese.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
         <div className="menu-card">
-          <img src={bigChick} alt="Cheesy burger" className="menu-img" />
-          <div className="burger-name">BIG CHICK</div>
-          <div className="menu-desc">
-            A massive crispy chicken fillet layered with melted cheese, bold
-            sauce, and a serious crunch that doesn’t hold back.
-          </div>
+          <img src={bigChick} alt="Big Chick burger" className="menu-img" />
+          <div className="burger-name">{t("menu.burgers.bigChick.name")}</div>
+          <div className="menu-desc">{t("menu.burgers.bigChick.desc")}</div>
           <div className="menu-cta">
             <a
               href="https://wolt.com/en/mlt"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Order now</span>
+              <span>{t("menu.orderNow")}</span>
             </a>
           </div>
         </div>
       </div>
-      <h2 className="heading-divider ending-divider">HUNGRY YET?</h2>
+
+      <h2 className="heading-divider ending-divider">
+        {t("menu.endingHeading")}
+      </h2>
     </div>
   );
 }
