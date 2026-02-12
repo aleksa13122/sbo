@@ -25,7 +25,7 @@
   font-style: normal;
   color: rgb(56, 36, 21);
   font-size: 2rem;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 .nav-center a {
   /* padding: 0.4rem 0.6rem; */
@@ -34,6 +34,8 @@
   display: inline-block;
   position: relative;
   padding-bottom: 0.5rem;
+  text-decoration: none;
+  color: #4a2f1aff;
 }
 .nav-center a {
   display: inline-block; /* required */
@@ -58,6 +60,7 @@
   letter-spacing: 0.3rem;
   color: #4a2f1aff;
   cursor: pointer;
+  text-decoration: none;
 }
 .nav-right {
   display: flex;

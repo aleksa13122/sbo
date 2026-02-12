@@ -2,10 +2,10 @@ import "./Social.css";
 import character from "../assets/burger-cheff.png";
 import { useState, useEffect } from "react";
 
-export default function Brand() {
+export default function Social() {
   const quotes = [
     {
-      text: "Juicy, messy, absolutely worth it.”",
+      text: "Juicy, messy, absolutely worth it.",
       author: "-Person who lives for burgers",
     },
     { text: "Serious flavour, no shortcuts taken.", author: "-Burger chef" },
@@ -26,19 +26,15 @@ export default function Brand() {
 
   const [index, setIndex] = useState(0);
   const [state, setState] = useState("show");
+  const [wave, setWave] = useState(false);
 
   useEffect(() => {
     const id = setInterval(() => {
-      // fade + blur OUT
       setState("hide");
 
-      // swap text while hidden
       setTimeout(() => {
         setIndex((prev) => (prev + 1) % quotes.length);
-
-        // fade + blur IN
         setState("show");
-        setTimeout(() => DURATION);
       }, DURATION);
     }, INTERVAL);
 
@@ -55,7 +51,15 @@ export default function Brand() {
           <p className="social-name">{quotes[index].author}</p>
         </div>
 
-        <img className="social-img" src={character} alt="Burger chef" />
+        <img
+          className={`social-img ${wave ? "chef-pop" : ""}`}
+          src={character}
+          alt="Burger chef"
+          onClick={() => {
+            setWave(true);
+            setTimeout(() => setWave(false), 700);
+          }}
+        />
       </div>
     </div>
   );

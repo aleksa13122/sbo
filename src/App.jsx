@@ -5,6 +5,7 @@ import Brand from "./components/Brand";
 import Social from "./components/Social";
 import Contact from "./components/Contact";
 import Menu from "./components/Menu";
+import AskChef from "./components/askTheCheff";
 
 import { useEffect } from "react";
 import Lenis from "lenis";
@@ -13,21 +14,22 @@ import "lenis/dist/lenis.css";
 export default function App() {
   useEffect(() => {
     const lenis = new Lenis({
-      smoothWheel: true, // ✅ makes mouse wheel inertial
-      smoothTouch: false, // keep false (mobile already has inertia)
-      wheelMultiplier: 1, // lower = slower wheel response (try 0.6–1.0)
-      lerp: 0.06, // lower = smoother/floatier (try 0.04–0.12)
+      smoothWheel: true,
+      smoothTouch: false,
+      wheelMultiplier: 0.85,
+      lerp: 0.06,
     });
 
-    let rafId;
-    const raf = (time) => {
+    window.lenis = lenis; // 👈 add this
+
+    function raf(time) {
       lenis.raf(time);
-      rafId = requestAnimationFrame(raf);
-    };
-    rafId = requestAnimationFrame(raf);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
 
     return () => {
-      cancelAnimationFrame(rafId);
       lenis.destroy();
     };
   }, []);
@@ -39,6 +41,7 @@ export default function App() {
       <Favourites></Favourites>
       <Brand></Brand>
       <Menu></Menu>
+      {/* <AskChef /> */}
       <Social></Social>
       <Contact></Contact>
     </div>

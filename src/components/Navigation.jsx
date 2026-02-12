@@ -2,13 +2,25 @@ import "./Navigation.css";
 import OrderButton from "./OrderButton";
 
 function Navigation() {
+  function scrollToFavourites() {
+    const section = document.getElementById("favourites");
+
+    if (window.lenis) {
+      window.lenis.scrollTo(section);
+    } else {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <div className="nav-container-main">
-      <div className="nav-left">SBO</div>
+      <a className="nav-left" href="#hero">
+        SBO
+      </a>
       <div className="nav-center">
-        <a>FAVOURITES</a>
-        <a>TASTY STUFF</a>
-        <a>ASK THE CHEFF</a>
+        <a href="#favourites">FAVOURITES</a>
+        <a href="#menu">TASTY STUFF</a>
+        {/* <a>ASK THE CHEFF</a> */}
       </div>
       <div className="nav-right">
         <button className="language-btn">

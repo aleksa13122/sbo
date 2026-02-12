@@ -9,6 +9,7 @@
   display: grid;
   place-items: center;
   padding: clamp(24px, 4vw, 64px);
+  text-decoration: none;
 }
 
 /* Huge centered text behind burger */
@@ -38,8 +39,11 @@
 
   pointer-events: none; /* doesn’t block clicks */
 
-  text-shadow: -1.5px -1.5px 0 #2b1b10, 1.5px -1.5px 0 #2b1b10,
-    -1.5px 1.5px 0 #2b1b10, 1.5px 1.5px 0 #2b1b10;
+  text-shadow:
+    -1.5px -1.5px 0 #2b1b10,
+    1.5px -1.5px 0 #2b1b10,
+    -1.5px 1.5px 0 #2b1b10,
+    1.5px 1.5px 0 #2b1b10;
 }
 
 .hero__title span {

@@ -14,7 +14,7 @@ import badge from "../assets/favourites-badge.png";
 
 export default function Menu() {
   return (
-    <div className="menu-container-main">
+    <div className="menu-container-main" id="menu">
       <h1 className="heading-divider">OUR FOOD</h1>
       <h3 className="menu-subheader">CLASSIC BURGERS</h3>
 

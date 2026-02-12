@@ -8,7 +8,7 @@ export default function Favourites() {
   return (
     <div>
       <Marquee></Marquee>
-      <div className="favourites-container-main">
+      <div className="favourites-container-main" id="favourites">
         <div className="favourites-card">
           <img src={cheesy} alt="Cheesy burger" className="favourites-img" />
           <div className="favourites-header">CHEESY CRAVE</div>

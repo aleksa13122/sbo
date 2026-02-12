@@ -3,7 +3,7 @@ import burgerImage from "../assets/hero-burger.png";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <h1 className="hero__title" aria-label="Serious Burgers Only">
         <span>SERIOUS</span>
         <span>BURGERS</span>
