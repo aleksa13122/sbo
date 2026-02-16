@@ -3,15 +3,17 @@
 body {
   margin: 0;
   background: #f5deb3;
+  overflow-x: hidden; /* ADD THIS - prevents horizontal scroll */
 }
 
 .brand {
   position: relative;
   width: 100%;
   background: #f2b705;
-  overflow: visible; /* required for bottom drip */
+  overflow: visible;
   isolation: isolate;
   height: 400px;
+  box-sizing: border-box; /* ADD THIS */
 }
 
 .brand::before,
@@ -28,7 +30,7 @@ body {
 }
 
 .brand::before {
-  top: -2px; /* slightly more aggressive seam kill */
+  top: -2px;
   background-image: url("../assets/border-top.svg");
 }
 
@@ -44,12 +46,8 @@ body {
   display: flex;
   flex-direction: row;
   padding-top: 8rem;
-}
-
-@media (max-width: 640px) {
-  .brand__inner {
-    padding: 3.5rem 1.25rem;
-  }
+  box-sizing: border-box; /* ADD THIS */
+  width: 100%; /* ADD THIS */
 }
 
 /* grow animation */
@@ -61,30 +59,35 @@ body {
     scale: 1;
   }
 }
+
 .brand-img {
   height: 300px;
   width: 300px;
+  max-width: 100%; /* ADD THIS - prevents overflow */
+  height: auto; /* ADD THIS - maintains aspect ratio */
   align-items: center;
   animation-name: grow;
   animation-timing-function: linear;
   animation-fill-mode: both;
-  animation-timeline: view(); /* animacija se desava kada je element vidljiv */
-  animation-range: entry 0% cover 40%; /* animacija se desava kada se element pojavi i zavrsava se na 40% stranice */
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .brand-row-second {
   justify-content: center;
   text-align: center;
   justify-items: center;
+  width: 100%; /* ADD THIS */
 }
+
 .brand__title {
   color: #4a2f1a;
   font-size: 40px;
   font-family: "Bowlby One", sans-serif;
   letter-spacing: 0.07em;
   font-weight: 800;
-  margin-bottom: 0.5rem; /* 👈 smaller gap to text */
-  margin-top: -1rem; /* 👈 moves header up */
+  margin-bottom: 0.5rem;
+  margin-top: -1rem;
   padding: 2rem;
 }
 
@@ -96,4 +99,111 @@ body {
   font-size: 1.5rem;
   line-height: 1.4;
   text-align: center;
+  max-width: 100%; /* ADD THIS */
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 1199px) {
+  .brand {
+    height: auto; /* Let it grow with content */
+    min-height: 350px;
+  }
+
+  .brand__inner {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    padding: 4rem 1.5rem;
+    padding-top: 6rem;
+  }
+
+  .brand-img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .brand__title {
+    font-size: 32px;
+    padding: 1.5rem;
+    margin-top: 1rem; /* Give it space */
+  }
+
+  .brand__text {
+    font-size: 1.3rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand {
+    min-height: 300px;
+  }
+
+  .brand__inner {
+    padding: 3rem 1rem;
+    padding-top: 4rem;
+  }
+
+  .brand-img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .brand__title {
+    font-size: 28px;
+    padding: 1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .brand__text {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+  }
+
+  .brand::before,
+  .brand::after {
+    height: 100px; /* Smaller drips on mobile */
+  }
+
+  .brand::after {
+    bottom: -100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand__inner {
+    padding: 2rem 1rem;
+    padding-top: 3rem;
+  }
+
+  .brand-img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .brand__title {
+    font-size: 24px;
+    padding: 0.8rem;
+  }
+
+  .brand__text {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .brand::before,
+  .brand::after {
+    height: 80px;
+  }
+
+  .brand::after {
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand__inner {
+    padding: 3.5rem 1.25rem;
+  }
 }

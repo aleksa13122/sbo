@@ -5,7 +5,7 @@
   min-height: 100vh;
   background: #f5deb3; /* wheat */
   overflow: hidden;
-
+  margin-top: 2.5rem;
   display: grid;
   place-items: center;
   padding: clamp(24px, 4vw, 64px);
@@ -26,7 +26,7 @@
   line-height: 0.9;
 
   /* responsive massive text */
-  font-size: clamp(3.5rem, 10vw, 9rem);
+  font-size: clamp(2.5rem, 10vw, 9rem);
 
   color: #5d3c21; /* dark brown */
 
@@ -37,7 +37,7 @@
   place-items: center;
   z-index: 1;
 
-  pointer-events: none; /* doesn’t block clicks */
+  pointer-events: none; /* doesn't block clicks */
 
   text-shadow:
     -1.5px -1.5px 0 #2b1b10,
@@ -54,15 +54,78 @@
 .hero__burger {
   position: absolute;
   left: 50%;
-  bottom: -6%;
-  transform: translateX(-50%);
+  top: 50%; /* Center vertically */
+  transform: translate(
+    -50%,
+    -55%
+  ); /* Center both horizontally and vertically */
   z-index: 2;
 
-  /* responsive size */
-  width: min(720px, 82vw);
+  width: min(720px, 90vw);
   height: auto;
 
   user-select: none;
   pointer-events: none;
-  bottom: -2%;
+}
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 1.5rem;
+    min-height: 85vh;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 9vw, 5rem);
+    letter-spacing: 0.12em;
+    text-shadow:
+      -1px -1px 0 #2b1b10,
+      1px -1px 0 #2b1b10,
+      -1px 1px 0 #2b1b10,
+      1px 1px 0 #2b1b10;
+  }
+
+  .hero__burger {
+    width: min(400px, 80vw);
+    bottom: 10rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero {
+    margin-top: 3rem;
+    min-height: 60vh;
+    padding: clamp(16px, 3vw, 32px);
+  }
+
+  .hero__title {
+    font-size: clamp(1.8rem, 8vw, 3.5rem);
+    letter-spacing: 0.2em;
+    line-height: 1;
+    font-weight: 100;
+  }
+
+  .hero__burger {
+    width: min(300px, 70vw);
+    bottom: 10rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: clamp(2rem, 9vw, 5rem);
+    letter-spacing: 0.06em; /* REDUCED */
+    text-shadow:
+      -0.8px -0.8px 0 #2b1b10,
+      0.8px -0.8px 0 #2b1b10,
+      -0.8px 0.8px 0 #2b1b10,
+      0.8px 0.8px 0 #2b1b10;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 50px;
+    letter-spacing: 0.05em; /* REDUCED */
+    line-height: 0.85;
+  }
 }

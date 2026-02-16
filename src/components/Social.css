@@ -1,38 +1,104 @@
 .social-container-main {
   margin-top: 6rem;
   margin-bottom: 8rem;
-  height: 300px;
+  min-height: 300px;
   width: 70vw;
+  max-width: 1200px;
   background-color: #6b4526;
   border: 2px solid #3c281aff;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   justify-self: center;
   color: #f2b705;
   position: relative;
+  box-sizing: border-box;
+  padding: 2rem;
+  overflow: visible; /* Allows character to overflow */
 }
-/* #4a2f1aff */
-/* #6B4526 */
-/* #3c281aff */
+
 .social-header {
   font-size: 35px;
   font-family: "Bowlby One", sans-serif;
   letter-spacing: 0.07em;
   font-weight: 800;
   text-align: start;
-  /* padding-top: 10px; */
-  padding-left: 200px;
+  padding-left: 10rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
+
+.social-divs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-left: 2rem;
+  color: rgb(252, 237, 210);
+  font-size: 25px;
+  font-family: "Poppins", system-ui, sans-serif;
+  position: relative;
+  min-height: 200px;
+}
+
+.social-text {
+  flex: 1;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    filter 0.35s ease;
+}
+
+.social-text.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.social-text.hide {
+  opacity: 0;
+  filter: blur(6px);
+}
+
+.social-name {
+  color: rgb(236, 206, 149);
+  padding-left: 0;
+  font-size: 18px;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
 .social-img {
-  height: 320px;
-  width: 320px;
-  /* background-color: aquamarine; */
   position: absolute;
-  right: 60px;
-  bottom: -90px;
+  height: 320px;
+  width: 300px;
+  right: 1rem;
+  bottom: -7rem;
   cursor: pointer;
+  pointer-events: auto;
+  transition: transform 0.3s ease;
+}
+
+.chef-pop {
+  animation: chefPop 700ms cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+
+@keyframes chefPop {
+  0% {
+    transform: scale(1) translateY(0);
+    filter: drop-shadow(0 0 0 rgba(255, 184, 0, 0));
+  }
+  35% {
+    transform: scale(1.1) translateY(-10px);
+    filter: drop-shadow(0 10px 18px rgba(255, 184, 0, 0.55));
+  }
+  65% {
+    transform: scale(0.97) translateY(3px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    filter: drop-shadow(0 0 0 rgba(255, 184, 0, 0));
+  }
 }
 
 @keyframes social-wiggle {
@@ -50,70 +116,166 @@
   }
 }
 
-.social-divs {
-  display: flex;
-  flex-direction: row;
-  padding-left: 40px;
-  /* gap: 40px; */
-  color: rgb(252, 237, 210);
-  font-size: 25px;
-  font-family: "Poppins", system-ui, sans-serif;
-  /* background-color: aquamarine; */
-}
-.social-text {
-  padding-left: 60px;
-  /* background-color: rgb(14, 142, 255); */
-}
-.social-text {
-  opacity: 1;
-  transform: translateX(0);
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
-}
+/* RESPONSIVE BREAKPOINTS */
 
-.social-name {
-  color: rgb(236, 206, 149);
-  padding-left: 60px;
-  font-size: 18px;
-}
-
-.social-text {
-  transition:
-    opacity 0.35s ease,
-    filter 0.35s ease;
-}
-
-.social-text.show {
-  opacity: 1;
-  filter: blur(0);
-}
-
-.social-text.hide {
-  opacity: 0;
-  filter: blur(6px);
-}
-.chef-pop {
-  animation: chefPop 700ms cubic-bezier(0.2, 0.8, 0.3, 1);
-}
-
-@keyframes chefPop {
-  0% {
-    transform: scale(1) translateY(0);
-    filter: drop-shadow(0 0 0 rgba(255, 184, 0, 0));
+@media (max-width: 1024px) {
+  .social-container-main {
+    width: 80vw;
+    min-height: 280px;
   }
 
-  35% {
-    transform: scale(1.1) translateY(-10px);
-    filter: drop-shadow(0 10px 18px rgba(255, 184, 0, 0.55));
+  .social-header {
+    font-size: 30px;
+    padding-left: 6rem;
   }
 
-  65% {
-    transform: scale(0.97) translateY(3px);
+  .social-divs {
+    font-size: 22px;
+    padding-left: 1.5rem;
   }
 
-  100% {
-    transform: scale(1) translateY(0);
-    filter: drop-shadow(0 0 0 rgba(255, 184, 0, 0));
+  .social-text {
+    padding-left: 2rem;
+  }
+
+  .social-img {
+    height: 280px;
+    width: 280px;
+    right: -3%;
+    bottom: -25%;
+  }
+
+  .social-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-container-main {
+    width: 90vw;
+    min-height: 350px;
+    padding: 2rem 1.5rem 2rem;
+    margin-bottom: 12rem; /* Extra space for overflowing character */
+  }
+
+  .social-header {
+    font-size: 26px;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .social-divs {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+    font-size: 20px;
+    min-height: 180px;
+  }
+
+  .social-text {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  .social-img {
+    height: 250px;
+    width: 250px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35%; /* Overflows bottom significantly */
+  }
+
+  .social-name {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .social-container-main {
+    width: 90vw;
+    padding: 1.8rem 1.2rem 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    min-height: 300px;
+  }
+
+  .social-header {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-divs {
+    font-size: 18px;
+    min-height: 150px;
+  }
+
+  .social-text {
+    padding-bottom: 1.5rem;
+  }
+
+  .social-name {
+    font-size: 14px;
+    margin-top: 0.8rem;
+  }
+
+  .social-img {
+    height: 200px;
+    width: 200px;
+    bottom: -32%;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-container-main {
+    padding: 1.5rem 1rem 1.5rem;
+    margin-bottom: 9rem;
+    min-height: 280px;
+  }
+
+  .social-header {
+    font-size: 20px;
+  }
+
+  .social-divs {
+    font-size: 16px;
+  }
+
+  .social-text {
+    line-height: 1.4;
+  }
+
+  .social-name {
+    font-size: 13px;
+  }
+
+  .social-img {
+    height: 170px;
+    width: 170px;
+    bottom: -30%;
+  }
+}
+
+@media (max-width: 375px) {
+  .social-container-main {
+    padding: 1.2rem 0.8rem 1.2rem;
+    margin-bottom: 8rem;
+  }
+
+  .social-header {
+    font-size: 18px;
+  }
+
+  .social-divs {
+    font-size: 15px;
+  }
+
+  .social-img {
+    height: 150px;
+    width: 150px;
+    bottom: -28%;
   }
 }

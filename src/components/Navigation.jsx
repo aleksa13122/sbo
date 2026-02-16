@@ -9,10 +9,10 @@ function Navigation() {
   const dropdownRef = useRef(null);
 
   const languages = [
-    { code: "en", label: "EN" },
-    { code: "mt", label: "MT" },
-    { code: "it", label: "IT" },
-    { code: "de", label: "DE" },
+    { code: "en", label: "EN", flag: "gb" },
+    { code: "mt", label: "MT", flag: "mt" },
+    { code: "it", label: "IT", flag: "it" },
+    { code: "de", label: "DE", flag: "de" },
   ];
 
   useEffect(() => {
@@ -30,6 +30,8 @@ function Navigation() {
     setIsDropdownOpen(false);
   };
 
+  const currentLanguage = languages.find((lang) => lang.code === language);
+
   return (
     <div className="nav-container-main">
       <a className="nav-left" href="#hero">
@@ -39,13 +41,18 @@ function Navigation() {
         <a href="#favourites">{t("navigation.favourites")}</a>
         <a href="#menu">{t("navigation.menu")}</a>
       </div>
+      <OrderButton />
       <div className="nav-right">
         <div className="language-dropdown" ref={dropdownRef}>
           <button
             className="language-btn"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
-            {language.toUpperCase()}
+            <img
+              src={`https://kapowaz.github.io/circle-flags/flags/${currentLanguage?.flag}.svg`}
+              alt={currentLanguage?.label}
+              className="flag-icon"
+            />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -72,13 +79,17 @@ function Navigation() {
                   }`}
                   onClick={() => handleLanguageChange(lang.code)}
                 >
+                  <img
+                    src={`https://kapowaz.github.io/circle-flags/flags/${lang.flag}.svg`}
+                    alt={lang.label}
+                    className="flag-icon-dropdown"
+                  />
                   {lang.label}
                 </button>
               ))}
             </div>
           )}
         </div>
-        <OrderButton />
       </div>
     </div>
   );
