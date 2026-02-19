@@ -1,11 +1,5 @@
 /* Brand.css */
 
-body {
-  margin: 0;
-  background: #f5deb3;
-  overflow-x: hidden; /* ADD THIS - prevents horizontal scroll */
-}
-
 .brand {
   position: relative;
   width: 100%;
@@ -61,18 +55,17 @@ body {
 }
 
 .brand-img {
-  height: 300px;
   width: 300px;
-  max-width: 100%; /* ADD THIS - prevents overflow */
-  height: auto; /* ADD THIS - maintains aspect ratio */
-  align-items: center;
-  animation-name: grow;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  max-width: 100%;
+  aspect-ratio: 1;
+  align-self: center;
+  scale: 0;
+  transition: scale 0.6s ease-out;
 }
 
+.brand-img--visible {
+  scale: 1;
+}
 .brand-row-second {
   justify-content: center;
   text-align: center;
@@ -118,7 +111,7 @@ body {
   }
 
   .brand-img {
-    height: 250px;
+    height: 300px;
     width: 250px;
   }
 
@@ -145,7 +138,7 @@ body {
   }
 
   .brand-img {
-    height: 200px;
+    /* height: 200px; */
     width: 200px;
   }
 
@@ -178,7 +171,7 @@ body {
   }
 
   .brand-img {
-    height: 150px;
+    /* height: 150px; */
     width: 150px;
   }
 
@@ -206,4 +199,17 @@ body {
   .brand__inner {
     padding: 3.5rem 1.25rem;
   }
+}
+.brand-img {
+  width: 300px;
+
+  max-width: 100%;
+  aspect-ratio: 1;
+  align-self: center;
+  scale: 0;
+  transition: scale 0.6s ease-out;
+}
+
+.brand-img--visible {
+  scale: 1;
 }

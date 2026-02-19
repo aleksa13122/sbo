@@ -1,8 +1,8 @@
 .menu-container-main {
   margin-top: 12rem;
-  width: 100%; /* ADD THIS */
-  box-sizing: border-box; /* ADD THIS */
-  overflow-x: hidden; /* ADD THIS */
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .menu-section {
@@ -11,8 +11,8 @@
   gap: 2rem;
   width: 90%;
   justify-self: center;
-  margin: 0 auto; /* ADD THIS for centering */
-  box-sizing: border-box; /* ADD THIS */
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .heading-divider {
@@ -26,13 +26,13 @@
   letter-spacing: 0.08em;
   color: #6b2f12;
   text-transform: uppercase;
-  margin: 4rem auto 3rem; /* Changed to auto for centering */
+  margin: 4rem auto 3rem;
   font-size: 50px;
   font-family: "Bowlby One", sans-serif;
   letter-spacing: 0.07em;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  box-sizing: border-box; /* ADD THIS */
+  box-sizing: border-box;
 }
 
 .heading-divider::before,
@@ -67,7 +67,7 @@
   transition:
     transform 150ms ease-out,
     box-shadow 150ms ease-out;
-  max-width: 100%; /* ADD THIS */
+  max-width: 100%;
 }
 
 .menu-card:hover {
@@ -204,7 +204,7 @@
 
 @media (max-width: 1170px) {
   .menu-section {
-    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* 3 columns */
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 1.5rem;
     width: 95%;
   }
@@ -227,7 +227,7 @@
 
 @media (max-width: 900px) {
   .menu-section {
-    grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 2 columns */
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 1.5rem;
     width: 90%;
   }
@@ -251,7 +251,7 @@
 
 @media (max-width: 768px) {
   .menu-section {
-    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Smaller cards */
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 1.2rem;
   }
 
@@ -290,42 +290,42 @@
   }
 
   .favourite-badge {
-    width: 90px;
-    top: -40px;
-    left: -30px;
+    width: 150px;
+    top: -80px;
+    left: -50px;
   }
-} /* Add these to your existing @media (max-width: 580px) section */
+}
 
-@media (max-width: 580px) {
+@media (max-width: 640px) {
   .menu-section {
     grid-template-columns: 1fr;
     gap: 2rem;
-    width: 90%; /* Changed from 85% to 90% */
+    width: 80%; /* changed from 90% */
   }
 
   .heading-divider {
-    font-size: 24px; /* Smaller */
+    font-size: 24px;
     width: 85%;
     gap: 0.8rem;
-    margin: 2.5rem auto 2rem; /* Better spacing */
-    padding: 0 1rem; /* Add padding */
+    margin: 2.5rem auto 2rem;
+    padding: 0 1rem;
   }
 
   .heading-divider::before,
   .heading-divider::after {
-    height: 2px; /* Thinner lines */
+    height: 2px;
   }
 
   .menu-subheader {
     font-size: 1.3rem;
-    margin-left: 0; /* Remove left margin */
+    margin-left: 0;
     text-align: center;
-    margin: 1.5rem auto 1.5rem; /* Center it */
+    margin: 1.5rem auto 1.5rem;
     padding: 0 1rem;
   }
 
   .menu-card {
-    max-width: 350px; /* Narrower - was 400px */
+    width: 70%; /* changed from max-width: 350px */
     margin: 0 auto;
   }
 
@@ -334,14 +334,8 @@
   }
 
   .menu-img img {
-    object-fit: contain; /* Changed from cover - prevents cropping */
-    padding: 0.5rem; /* Add some breathing room */
-  }
-
-  .favourite-badge {
-    width: 75px; /* Smaller badge */
-    top: -30px;
-    left: -20px;
+    object-fit: contain;
+    padding: 0.5rem;
   }
 }
 
@@ -351,7 +345,7 @@
   }
 
   .heading-divider {
-    font-size: 20px; /* Even smaller */
+    font-size: 20px;
     gap: 0.6rem;
     margin: 2rem auto 1.5rem;
   }
@@ -362,17 +356,17 @@
   }
 
   .menu-card {
-    max-width: 320px; /* Even narrower */
+    width: 80%; /* changed from max-width: 320px */
   }
 
   .menu-img {
-    height: 180px; /* Shorter */
+    height: 180px;
   }
 
   .burger-name {
     font-size: 0.95rem;
     padding: 0.8rem 0.8rem 0.2rem;
-    letter-spacing: 0.05em; /* Less spacing */
+    letter-spacing: 0.05em;
   }
 
   .menu-desc {
@@ -387,13 +381,12 @@
   }
 
   .favourite-badge {
-    width: 70px;
-    top: -28px;
-    left: -18px;
+    width: 120px;
+    top: -70px;
+    left: -40px;
   }
 }
 
-/* Extra small phones */
 @media (max-width: 375px) {
   .heading-divider {
     font-size: 18px;
@@ -404,7 +397,7 @@
   }
 
   .menu-card {
-    max-width: 280px;
+    width: 80%;
   }
 
   .menu-img {

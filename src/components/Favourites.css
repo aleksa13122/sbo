@@ -164,9 +164,23 @@
   .favourites-container-main {
     grid-template-columns: 1fr;
     padding: 3rem 1.25rem;
+    width: 80%;
   }
 
   .favourites-img {
-    height: 400px; /* slightly shorter on small screens */
+    height: 300px; /* slightly shorter on small screens */
+    width: 70%;
+    align-self: center;
+  }
+}
+@media (max-width: 480px) {
+  .favourites-container-main {
+    padding: 1.5rem 0.5rem;
+
+    width: 90%;
+  }
+
+  .favourites-img {
+    width: 80%;
   }
 }

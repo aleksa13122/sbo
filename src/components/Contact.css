@@ -165,3 +165,8 @@
     font-size: 1.5rem;
   }
 }
+@media (max-width: 550px) {
+  .brand-title {
+    font-size: 2.5rem;
+  }
+}
