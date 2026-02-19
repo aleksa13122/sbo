@@ -17,7 +17,6 @@
   margin-top: -1rem;
 }
 
-/* Fixed shadow slab (NEVER moves) */
 .btn3d__shadow {
   position: absolute;
   inset: 0;
@@ -27,7 +26,6 @@
   z-index: 0;
 }
 
-/* Clickable face */
 .btn3d__face {
   position: relative;
   z-index: 1;
@@ -35,17 +33,14 @@
   align-items: center;
   gap: 0.6rem;
   padding: 0.95rem 1.6rem;
-
   background: var(--btn-face);
   border: 4px solid var(--btn-border);
   border-radius: 999px;
-
   font-family: "Poppins", system-ui, sans-serif;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--btn-text);
-
   transform: translateY(0);
   transition: transform 140ms ease-out;
 }
@@ -53,53 +48,74 @@
 .btn3d__icon {
   width: 1.1rem;
   height: 1.1rem;
-  stroke-width: 2.5; /* makes it bolder */
-  margin-left: 0.1rem; /* tiny spacing polish */
+  stroke-width: 2.5;
+  margin-left: 0.1rem;
 }
 
-/* Hover → button pops OUT */
 .btn3d:hover .btn3d__face {
   transform: translateY(-3px);
 }
 
-/* Active → button presses IN */
 .btn3d:active .btn3d__face {
   transform: translateY(6px);
 }
 
-/* Keyboard accessibility */
 .btn3d:focus-visible .btn3d__face {
   outline: 3px solid #f2b705;
   outline-offset: 4px;
 }
 
-/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   .btn3d__face {
     transition: none;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 860px) {
+  .btn3d {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn3d {
+    margin-left: -1rem;
+  }
+}
+
+@media (max-width: 450px) {
   .btn3d__face {
-    padding: 0.7rem 1.2rem; /* Smaller padding */
-    font-size: 0.85rem; /* Smaller text */
-    font-weight: 700;
-    gap: 0.4rem; /* Reduced gap between text and icon */
-    border: 3px solid var(--btn-border); /* Thinner border */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.75rem 1.2rem;
+    border: 3px solid var(--btn-border);
   }
 
-  .btn3d__shadow {
-    transform: translateY(6px); /* Reduce shadow depth */
+  .btn3d__text {
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
   }
 
   .btn3d__icon {
-    width: 1rem;
-    height: 1rem;
-    stroke-width: 2.5;
+    display: none;
+  }
+  .btn3d {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn3d__face {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    gap: 0.4rem;
   }
 
-  /* Adjust press depth for smaller button */
+  .btn3d__shadow {
+    transform: translateY(6px);
+  }
+
   .btn3d:active .btn3d__face {
     transform: translateY(4px);
   }
