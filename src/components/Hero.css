@@ -55,10 +55,7 @@
   position: absolute;
   left: 50%;
   top: 50%; /* Center vertically */
-  transform: translate(
-    -50%,
-    -55%
-  ); /* Center both horizontally and vertically */
+  transform: translate(-50%, -55%);
   z-index: 2;
 
   width: min(720px, 90vw);
@@ -76,7 +73,7 @@
 
   .hero__title {
     font-size: clamp(2rem, 9vw, 5rem);
-    letter-spacing: 0.06em; /* REDUCED */
+    letter-spacing: 0.06em;
     text-shadow:
       -0.8px -0.8px 0 #2b1b10,
       0.8px -0.8px 0 #2b1b10,
@@ -104,7 +101,7 @@
   .hero__title {
     font-weight: 100;
     font-size: 50px;
-    letter-spacing: 0.05em; /* REDUCED */
+    letter-spacing: 0.05em;
     line-height: 0.85;
   }
 

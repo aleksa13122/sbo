@@ -36,7 +36,6 @@
   min-height: 420px;
   display: flex;
   flex-direction: column;
-  /* cursor: default; */
   box-shadow: none;
   transform: translateY(0);
   cursor: pointer;
@@ -56,7 +55,7 @@
 /* Image wrapper (controls height) */
 .favourites-img {
   width: 100%;
-  height: 300px; /* adjust if you want taller/shorter */
+  height: 300px;
   overflow: hidden;
   background: rgba(242, 183, 5, 0.22);
 }
@@ -66,9 +65,8 @@
   width: 100%;
   height: 100%;
   display: block;
-
-  object-fit: cover; /* IMPORTANT: no distortion */
-  object-position: center; /* tweak to "center top" if needed */
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Burger name */
@@ -125,21 +123,17 @@
 .favourites-cta a span {
   position: relative;
   z-index: 1;
-
   display: inline-block;
   padding: 0.75rem 1.4rem;
-
   background: #f2b705;
   border: 3px solid #2b1b10;
   border-radius: 999px;
-
   font-family: "Poppins", system-ui, sans-serif;
   font-weight: 800;
   font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #2b1b10;
-
   transform: translateY(0);
   transition: transform 140ms ease-out;
 }
@@ -168,7 +162,7 @@
   }
 
   .favourites-img {
-    height: 300px; /* slightly shorter on small screens */
+    height: 300px;
     width: 70%;
     align-self: center;
   }
@@ -176,7 +170,6 @@
 @media (max-width: 480px) {
   .favourites-container-main {
     padding: 1.5rem 0.5rem;
-
     width: 90%;
   }
 

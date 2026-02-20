@@ -7,7 +7,7 @@
   overflow: visible;
   isolation: isolate;
   height: 400px;
-  box-sizing: border-box; /* ADD THIS */
+  box-sizing: border-box;
 }
 
 .brand::before,
@@ -40,8 +40,8 @@
   display: flex;
   flex-direction: row;
   padding-top: 8rem;
-  box-sizing: border-box; /* ADD THIS */
-  width: 100%; /* ADD THIS */
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* grow animation */
@@ -70,7 +70,7 @@
   justify-content: center;
   text-align: center;
   justify-items: center;
-  width: 100%; /* ADD THIS */
+  width: 100%;
 }
 
 .brand__title {
@@ -92,7 +92,7 @@
   font-size: 1.5rem;
   line-height: 1.4;
   text-align: center;
-  max-width: 100%; /* ADD THIS */
+  max-width: 100%;
 }
 
 /* RESPONSIVE BREAKPOINTS */
@@ -118,7 +118,7 @@
   .brand__title {
     font-size: 32px;
     padding: 1.5rem;
-    margin-top: 1rem; /* Give it space */
+    margin-top: 1rem;
   }
 
   .brand__text {
@@ -171,7 +171,6 @@
   }
 
   .brand-img {
-    /* height: 150px; */
     width: 150px;
   }
 
